@@ -1,88 +1,82 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { getUserProfile, updateUserProfile } from "../services/api"; // Import các hàm API
 import "./UserProfile.css";
 import bk2Image from "./bk2.jpg";
 
 const UserProfile = () => {
   const [isEditing, setIsEditing] = useState(false); // Trạng thái chỉnh sửa
-  const [user, setUser] = useState({
-    name: "Phạm Nguyễn Hùng Nguyên",
-    email: "Nguyen.PNH226115@sis.hust.edu.vn",
-    address: "Hai Bà Trưng - Hà Nội",
-    bio: "Bonjour !",
-    currentPassword: "123456", // Mật khẩu hiện tại (giả định)
-  });
-  const [passwordInputs, setPasswordInputs] = useState({
-    oldPassword: "",
-    newPassword: "",
-    confirmNewPassword: "",
-  });
-  const [passwordError, setPasswordError] = useState(""); // Thông báo lỗi đổi mật khẩu
-
+  const [user, setUser] = useState(null); // Thông tin người dùng từ backend
+  const [error, setError] = useState(""); // Thông báo lỗi
   const navigate = useNavigate();
 
-  const handleBackToDashboard = () => {
-    navigate("/dashboard");
-  };
-
-  const handleEditProfile = () => {
-    setIsEditing(true); // Bật chế độ chỉnh sửa
-  };
-
-  const handleSaveProfile = () => {
-    // Kiểm tra nếu đang chỉnh sửa mật khẩu
-    if (
-      passwordInputs.oldPassword ||
-      passwordInputs.newPassword ||
-      passwordInputs.confirmNewPassword
-    ) {
-      // Kiểm tra mật khẩu cũ có đúng không
-      if (passwordInputs.oldPassword !== user.currentPassword) {
-        setPasswordError("Mật khẩu cũ không đúng.");
+  // Lấy thông tin người dùng từ API khi component được render
+  useEffect(() => {
+    const fetchUserData = async () => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        navigate("/login"); // Điều hướng về trang login nếu không có token
         return;
       }
-
-      // Kiểm tra mật khẩu mới có khớp nhau không
-      if (passwordInputs.newPassword !== passwordInputs.confirmNewPassword) {
-        setPasswordError("Mật khẩu mới không khớp.");
-        return;
+      try {
+        const userData = await getUserProfile(token); // Gọi API lấy thông tin người dùng
+        setUser(userData); // Cập nhật state với thông tin từ backend
+      } catch (err) {
+        console.error("Lỗi khi lấy dữ liệu người dùng:", err);
+        navigate("/login"); // Điều hướng về trang login nếu có lỗi
       }
+    };
 
-      // Kiểm tra độ dài mật khẩu mới
-      if (passwordInputs.newPassword.length < 6) {
-        setPasswordError("Mật khẩu mới phải có ít nhất 6 ký tự.");
-        return;
-      }
+    fetchUserData();
+  }, [navigate]);
 
-      // Cập nhật mật khẩu
-      setUser({ ...user, currentPassword: passwordInputs.newPassword });
-      setPasswordInputs({ oldPassword: "", newPassword: "", confirmNewPassword: "" });
-      setPasswordError(""); // Xóa lỗi
-      alert("Mật khẩu đã được thay đổi thành công!");
+  // Xử lý cập nhật thông tin
+  const handleSaveProfile = async () => {
+    setError(""); // Xóa thông báo lỗi
+    try {
+      console.log("Dữ liệu gửi đi:", user); // Log dữ liệu gửi tới API
+      const token = localStorage.getItem("token");
+      const updatedUser = await updateUserProfile(token, user); // Gọi API cập nhật thông tin
+      console.log("Phản hồi từ API:", updatedUser); // Log phản hồi từ API
+      setUser(updatedUser); // Cập nhật state với thông tin đã chỉnh sửa
+      setIsEditing(false); // Thoát chế độ chỉnh sửa
+      alert("Cập nhật thông tin thành công!");
+    } catch (err) {
+      console.error("Lỗi khi cập nhật thông tin:", err);
+      setError(err.response?.data?.message || "Không thể cập nhật thông tin. Vui lòng thử lại.");
     }
-
-    setIsEditing(false); // Tắt chế độ chỉnh sửa
   };
 
+  // Xử lý thay đổi input
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    if (name in passwordInputs) {
-      setPasswordInputs({ ...passwordInputs, [name]: value }); // Cập nhật mật khẩu
-    } else {
-      setUser({ ...user, [name]: value }); // Cập nhật thông tin cá nhân
-    }
+    setUser((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
+
+  if (!user) return <div>Đang tải dữ liệu...</div>; // Hiển thị khi dữ liệu đang được tải
 
   return (
     <div
       className="user-profile-background"
-      style={{ backgroundImage: `url(${bk2Image})` }}
+      style={{
+        backgroundImage: `url(${bk2Image})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
       <div className="user-profile-container">
         <div className="user-profile-content">
-          {/* Avatar và Tiêu đề */}
+          {/* Header thông tin cá nhân */}
           <div className="user-profile-header">
-            <div className="avatar">N</div>
+            <div className="avatar">{user.username.charAt(0).toUpperCase()}</div>
             <h1>Thông tin cá nhân</h1>
           </div>
 
@@ -92,16 +86,13 @@ const UserProfile = () => {
           {!isEditing ? (
             <div className="user-profile-info">
               <p>
-                <strong>Tên:</strong> {user.name}
+                <strong>Tên:</strong> {user.username}
               </p>
               <p>
                 <strong>Email:</strong> {user.email}
               </p>
               <p>
                 <strong>Địa chỉ:</strong> {user.address}
-              </p>
-              <p>
-                <strong>Giới thiệu:</strong> {user.bio}
               </p>
             </div>
           ) : (
@@ -110,8 +101,8 @@ const UserProfile = () => {
                 Tên:
                 <input
                   type="text"
-                  name="name"
-                  value={user.name}
+                  name="username"
+                  value={user.username}
                   onChange={handleInputChange}
                 />
               </label>
@@ -122,6 +113,7 @@ const UserProfile = () => {
                   name="email"
                   value={user.email}
                   onChange={handleInputChange}
+                  disabled // Không cho phép chỉnh sửa email
                 />
               </label>
               <label>
@@ -133,46 +125,10 @@ const UserProfile = () => {
                   onChange={handleInputChange}
                 />
               </label>
-              <label>
-                Giới thiệu:
-                <textarea
-                  name="bio"
-                  value={user.bio}
-                  onChange={handleInputChange}
-                ></textarea>
-              </label>
-              <hr />
-              <h3>Đổi mật khẩu</h3>
-              <label>
-                Mật khẩu cũ:
-                <input
-                  type="password"
-                  name="oldPassword"
-                  value={passwordInputs.oldPassword}
-                  onChange={handleInputChange}
-                />
-              </label>
-              <label>
-                Mật khẩu mới:
-                <input
-                  type="password"
-                  name="newPassword"
-                  value={passwordInputs.newPassword}
-                  onChange={handleInputChange}
-                />
-              </label>
-              <label>
-                Nhập lại mật khẩu mới:
-                <input
-                  type="password"
-                  name="confirmNewPassword"
-                  value={passwordInputs.confirmNewPassword}
-                  onChange={handleInputChange}
-                />
-              </label>
-              {passwordError && <p className="error-message">{passwordError}</p>}
             </div>
           )}
+
+          {error && <p className="error-message">{error}</p>} {/* Hiển thị lỗi nếu có */}
 
           {/* Các nút điều hướng */}
           <div className="user-profile-buttons">
@@ -180,13 +136,13 @@ const UserProfile = () => {
               <>
                 <button
                   className="btn primary"
-                  onClick={handleBackToDashboard}
+                  onClick={() => navigate("/dashboard")}
                 >
                   Quay về trang chính
                 </button>
                 <button
                   className="btn secondary"
-                  onClick={handleEditProfile}
+                  onClick={() => setIsEditing(true)}
                 >
                   Chỉnh sửa thông tin
                 </button>
