@@ -1,0 +1,164 @@
+/* Nền và giao diện tổng quan */
+.addTaskContainer {
+  background-image: url("./hoa.webp"); /* Đường dẫn ảnh nền */
+  background-size: cover; /* Ảnh bao phủ toàn màn hình */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  background-position: center; /* Ảnh nằm giữa */
+  min-height: 100vh; /* Chiều cao tối thiểu toàn trang */
+  display: flex; /* Sử dụng flexbox */
+  flex-direction: column; /* Cột dọc */
+  justify-content: flex-start; /* Căn từ trên xuống */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  padding: 30px; /* Khoảng cách xung quanh */
+}
+
+/* Hộp chính */
+.addTaskContainer > form {
+  background-color: rgba(255, 255, 255, 0.95); /* Nền trắng mờ */
+  padding: 20px;
+  border-radius: 15px; /* Bo góc */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  width: 100%;
+  max-width: 600px; /* Độ rộng tối đa của form */
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo cột */
+  gap: 15px; /* Khoảng cách giữa các phần tử */
+  backdrop-filter: blur(8px); /* Hiệu ứng làm mờ nền */
+}
+
+/* Tiêu đề chính */
+.title {
+  font-size: 36px; /* Kích thước chữ lớn hơn để dễ đọc */
+  color: #a85630; /* Màu xanh đậm, chuyên nghiệp */
+  text-align: center; /* Căn giữa */
+  margin-bottom: 30px; /* Tăng khoảng cách dưới */
+  font-weight: 700; /* Tăng độ đậm */
+  letter-spacing: 1.5px; /* Khoảng cách giữa các chữ cái */
+  text-transform: uppercase; /* Chuyển tất cả chữ thành chữ in hoa */
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng chữ nổi mềm mại */
+  padding: 10px; /* Tạo khoảng cách đều trong tiêu đề */
+  background: rgba(255, 255, 255, 0.8); /* Nền trắng mờ để tách biệt với hình nền */
+  border-radius: 8px; /* Bo góc để mềm mại hơn */
+  display: inline-block; /* Giữ tiêu đề nằm gọn trong khung */
+}
+
+
+
+/* Select và input */
+.select,
+.input {
+  width: 100%; /* Chiếm 100% chiều ngang */
+  padding: 12px;
+  border: 1px solid #ccc; /* Viền xám */
+  border-radius: 8px; /* Bo góc */
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng viền trong */
+}
+
+.select:focus,
+.input:focus {
+  border-color: #1976d2; /* Đổi màu viền khi focus */
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.5); /* Hiệu ứng sáng khi focus */
+}
+
+/* Nút */
+.btn {
+  background-color: #1976d2; /* Màu nền xanh */
+  color: #fff; /* Màu chữ trắng */
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none; /* Loại bỏ viền */
+  border-radius: 8px; /* Bo góc */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1565c0; /* Màu xanh đậm khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ */
+}
+
+/* Nút quay lại */
+.btnBack {
+  margin-top: 20px;
+  background-color: #d63601; /* Xanh lá */
+}
+
+.btnBack:hover {
+  background-color: #1565c0;
+}
+
+/* Khu vực danh sách công việc */
+.membersTasks {
+  margin-top: 30px;
+  text-align: left; /* Căn lề trái */
+  width: 100%;
+  max-width: 600px;
+}
+
+.memberTask {
+  background-color: rgba(255, 255, 255, 0.95); /* Nền trắng mờ */
+  margin-bottom: 15px; /* Khoảng cách giữa các thành viên */
+  padding: 15px;
+  border-radius: 10px; /* Bo góc */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.memberTask h3 {
+  margin: 0 0 10px 0; /* Khoảng cách dưới */
+  font-size: 20px;
+  color: #2c3e50; /* Màu chữ đậm */
+}
+
+/* Danh sách công việc */
+.taskItem {
+  display: flex;
+  justify-content: space-between; /* Dàn đều khoảng cách */
+  align-items: center;
+  margin-bottom: 10px; /* Khoảng cách dưới */
+  padding: 10px;
+  background-color: #f9f9f9; /* Nền xám nhạt */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.taskItem:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Bóng khi hover */
+}
+
+/* Nội dung công việc */
+.taskItem span {
+  flex-grow: 1; /* Đẩy nội dung sang bên trái */
+  font-size: 16px;
+  color: #333;
+}
+
+/* Nút hành động */
+.taskActions {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.taskActions button {
+  background: none; /* Nền trong suốt */
+  border: none; /* Không viền */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.taskActions button:hover {
+  transform: scale(1.2); /* Phóng to biểu tượng */
+}
+
+.taskActions .editIcon {
+  color: #42a5f5; /* Màu xanh dương */
+  font-size: 20px;
+}
+
+.taskActions .deleteIcon {
+  color: #e53935; /* Màu đỏ */
+  font-size: 20px;
+}

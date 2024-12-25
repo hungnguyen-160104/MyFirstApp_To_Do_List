@@ -1,0 +1,108 @@
+.group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Căn đều hai bên */
+  width: 100%;
+  padding: 10px 15px; /* Khoảng cách padding cho đẹp hơn */
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.group-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  flex-grow: 1; /* Đẩy phần tiêu đề sang bên trái */
+  margin-right: 10px; /* Khoảng cách giữa tiêu đề và nút */
+  text-transform: uppercase; /* Chữ in hoa */
+}
+
+.group-icon {
+  display: flex;
+  gap: 8px; /* Khoảng cách giữa các nút */
+}
+
+.group-icon button {
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.group-icon button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+.group-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px; /* Khoảng cách giữa các nhóm nút */
+}
+
+.group-task-button {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 20px;
+  background-color: #b94646; /* Màu đỏ nổi bật */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.group-task-button:hover {
+  background-color: #bd6b41; /* Màu đỏ nhạt hơn khi hover */
+  transform: scale(1.02);
+}
+
+.group-tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa các nhóm */
+  padding: 20px;
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+  backdrop-filter: blur(10px); /* Làm mờ nền */
+  -webkit-backdrop-filter: blur(10px); /* Hỗ trợ Safari */
+  border-radius: 15px; /* Bo góc */
+  padding: 10px 20px; /* Khoảng cách nội dung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  max-width: 300px; /* Độ rộng tối đa */
+  width: 100%; /* Chiếm 90% màn hình */
+  margin-bottom: 20px; /* Khoảng cách giữa các nhóm */
+}
+
+.add-new-group {
+  font-size: 14px;
+  color: #1976d2;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.add-new-group:hover {
+  text-decoration: underline;
+  color: #1565c0;
+}

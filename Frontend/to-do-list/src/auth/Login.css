@@ -1,0 +1,142 @@
+/* src/auth/Login.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+  }
+  
+  .login-bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .login-container {
+    background: rgba(229, 215, 215, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    width: 350px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c2626;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 18px;
+    opacity: 0.9;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; 
+    border: none;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.8);
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  .input-group input::placeholder {
+    color: #666;
+    opacity: 0.9;
+  }
+  
+  .input-group input:focus {
+    background: rgba(255,255,255,0.9);
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .remember-me input {
+    margin-right: 6px;
+    accent-color: #333;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .forgot-password:hover {
+    color: #333;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background: #e0e0e0;
+  }
+  
+  .register-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .register-text a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .register-text a:hover {
+    color: #e5331b;
+  }
+  

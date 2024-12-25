@@ -1,0 +1,46 @@
+[2024-12-23 19:32:23] ERROR: Error registering user: Error creating user: duplicate key value violates unique constraint "users_username_key"
+[2024-12-24 18:05:57] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 18:48:29] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 19:04:58] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 19:05:02] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 19:05:09] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 19:05:35] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 19:26:31] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 21:31:40] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-24 21:34:16] ERROR: Error registering user: Error: Error finding user by email: database "ToDoList" does not exist
+    at findUserByEmail (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\models\userModel.js:27:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async registerUser (C:\Users\Admin\Desktop\cnpm-todolist\Backend\src\controllers\authController.js:21:30)
+[2024-12-25 14:57:34] ERROR: Error updating user: Error updating user: could not determine data type of parameter $3
+[2024-12-25 15:38:22] ERROR: Error updating category 1735115893970 for user 6: Error updating category: value "1735115893970" is out of range for type integer
+[2024-12-25 15:38:36] ERROR: Error updating category 1735115893970 for user 6: Error updating category: value "1735115893970" is out of range for type integer
+[2024-12-25 15:39:34] ERROR: Error updating category 1735115893970 for user 6: Error updating category: value "1735115893970" is out of range for type integer
+[2024-12-25 21:08:20] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed

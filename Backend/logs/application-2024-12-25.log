@@ -1,0 +1,481 @@
+[2024-12-25 00:46:32] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 00:46:32] INFO: ::1 - - [24/Dec/2024:17:46:32 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:46:34] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:46:34] INFO: ::1 - - [24/Dec/2024:17:46:34 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:46:34] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:46:34] INFO: ::1 - - [24/Dec/2024:17:46:34 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:46:37] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:46:37] INFO: ::1 - - [24/Dec/2024:17:46:37 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:46:37] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:46:37] INFO: ::1 - - [24/Dec/2024:17:46:37 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:29] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 00:48:29] INFO: ::1 - - [24/Dec/2024:17:48:29 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:31] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:48:31] INFO: ::1 - - [24/Dec/2024:17:48:31 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:31] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:48:31] INFO: ::1 - - [24/Dec/2024:17:48:31 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:42] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:48:42] INFO: ::1 - - [24/Dec/2024:17:48:42 +0000] "PUT /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:42] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:48:42] INFO: ::1 - - [24/Dec/2024:17:48:42 +0000] "PUT /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:46] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:48:46] INFO: ::1 - - [24/Dec/2024:17:48:46 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:48:46] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 00:48:46] INFO: ::1 - - [24/Dec/2024:17:48:46 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:49:00] INFO: ::1 - - [24/Dec/2024:17:49:00 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:49:00] INFO: ::1 - - [24/Dec/2024:17:49:00 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:49:00] INFO: ::1 - - [24/Dec/2024:17:49:00 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:49:00] INFO: ::1 - - [24/Dec/2024:17:49:00 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:49:00] INFO: ::1 - - [24/Dec/2024:17:49:00 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 00:49:01] INFO: ::1 - - [24/Dec/2024:17:49:01 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:05:57] INFO: ::1 - - [24/Dec/2024:18:05:57 +0000] "POST /api-docs/ HTTP/1.1" 200 3106 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:08:00] INFO: ::1 - - [24/Dec/2024:18:08:00 +0000] "POST /api/categories%0A HTTP/1.1" 404 157 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:15:40] WARN: Access denied: Authorization header is missing
+[2024-12-25 01:15:40] INFO: ::1 - - [24/Dec/2024:18:15:40 +0000] "POST /api/categories HTTP/1.1" 401 42 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:17:41] WARN: Access denied: Authorization header is missing
+[2024-12-25 01:17:41] INFO: ::1 - - [24/Dec/2024:18:17:41 +0000] "POST /api/categories HTTP/1.1" 401 42 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:18:41] INFO: ::1 - - [24/Dec/2024:18:18:41 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:18:41] INFO: ::1 - - [24/Dec/2024:18:18:41 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:18:41] INFO: ::1 - - [24/Dec/2024:18:18:41 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:18:41] INFO: ::1 - - [24/Dec/2024:18:18:41 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:18:41] INFO: ::1 - - [24/Dec/2024:18:18:41 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:18:43] INFO: ::1 - - [24/Dec/2024:18:18:43 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:26:23] INFO: Server is running on port 5000
+[2024-12-25 01:26:23] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 01:26:34] INFO: ::1 - - [24/Dec/2024:18:26:34 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:26:34] INFO: ::1 - - [24/Dec/2024:18:26:34 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:26:34] INFO: ::1 - - [24/Dec/2024:18:26:34 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:26:34] INFO: ::1 - - [24/Dec/2024:18:26:34 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:26:35] INFO: ::1 - - [24/Dec/2024:18:26:35 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:27:00] WARN: Access denied: Authorization header is missing
+[2024-12-25 01:27:00] INFO: ::1 - - [24/Dec/2024:18:27:00 +0000] "POST /api/categories HTTP/1.1" 401 42 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:27:41] INFO: ::1 - - [24/Dec/2024:18:27:41 +0000] "POST /api/auth/register HTTP/1.1" 400 235 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:28:21] INFO: User registered: laithithuy@gmail.com
+[2024-12-25 01:28:21] INFO: ::1 - - [24/Dec/2024:18:28:21 +0000] "POST /api/auth/register HTTP/1.1" 201 248 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:29:03] WARN: Access denied: Authorization header is missing
+[2024-12-25 01:29:03] INFO: ::1 - - [24/Dec/2024:18:29:03 +0000] "POST /api/categories HTTP/1.1" 401 42 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:31:06] INFO: User logged in: laithithuy@gmail.com
+[2024-12-25 01:31:06] INFO: ::1 - - [24/Dec/2024:18:31:06 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:32:52] INFO: User logged in: laithithuy@gmail.com
+[2024-12-25 01:32:52] INFO: ::1 - - [24/Dec/2024:18:32:52 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:33:40] WARN: Access denied: Authorization header is missing
+[2024-12-25 01:33:40] INFO: ::1 - - [24/Dec/2024:18:33:40 +0000] "POST /api/categories HTTP/1.1" 401 42 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:37:28] INFO: ::1 - - [24/Dec/2024:18:37:28 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:37:28] INFO: ::1 - - [24/Dec/2024:18:37:28 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:37:28] INFO: ::1 - - [24/Dec/2024:18:37:28 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:37:28] INFO: ::1 - - [24/Dec/2024:18:37:28 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:37:28] INFO: ::1 - - [24/Dec/2024:18:37:28 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:37:32] INFO: ::1 - - [24/Dec/2024:18:37:32 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 01:38:41] INFO: User registered: hungnguyen123@gmail.com
+[2024-12-25 01:38:41] INFO: ::1 - - [24/Dec/2024:18:38:41 +0000] "POST /api/auth/register HTTP/1.1" 201 264 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:39:36] INFO: ::1 - - [24/Dec/2024:18:39:36 +0000] "POST /api/auth/login HTTP/1.1" 400 118 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:39:50] INFO: User logged in: hungnguyen123@gmail.com
+[2024-12-25 01:39:50] INFO: ::1 - - [24/Dec/2024:18:39:50 +0000] "POST /api/auth/login HTTP/1.1" 200 264 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:41:09] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 01:41:09] INFO: ::1 - - [24/Dec/2024:18:41:09 +0000] "POST /api/categories HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:41:31] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 01:41:31] INFO: ::1 - - [24/Dec/2024:18:41:31 +0000] "POST /api/categories HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:42:30] INFO: ::1 - - [24/Dec/2024:18:42:30 +0000] "POST /api/auth/login HTTP/1.1" 400 115 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:42:43] WARN: Login failed: Email tuanduy123@gmail.com không tồn tại.
+[2024-12-25 01:42:43] INFO: ::1 - - [24/Dec/2024:18:42:43 +0000] "POST /api/auth/login HTTP/1.1" 400 58 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:42:51] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 01:42:51] INFO: ::1 - - [24/Dec/2024:18:42:51 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 01:43:48] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 01:43:48] INFO: ::1 - - [24/Dec/2024:18:43:48 +0000] "POST /api/categories HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:18:05] INFO: Server is running on port 5000
+[2024-12-25 14:18:05] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 14:19:48] INFO: ::1 - - [25/Dec/2024:07:19:48 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:19:48] INFO: ::1 - - [25/Dec/2024:07:19:48 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:19:48] INFO: ::1 - - [25/Dec/2024:07:19:48 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:19:48] INFO: ::1 - - [25/Dec/2024:07:19:48 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:19:49] INFO: ::1 - - [25/Dec/2024:07:19:49 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:21:28] INFO: ::1 - - [25/Dec/2024:07:21:28 +0000] "POST /api/auth/register HTTP/1.1" 400 137 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:21:56] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 14:21:56] INFO: ::1 - - [25/Dec/2024:07:21:56 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:22:42] INFO: User registered: hnguyen@gmail.com
+[2024-12-25 14:22:42] INFO: ::1 - - [25/Dec/2024:07:22:42 +0000] "POST /api/auth/register HTTP/1.1" 201 265 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:23:14] INFO: User logged in: hnguyen@gmail.com
+[2024-12-25 14:23:14] INFO: ::1 - - [25/Dec/2024:07:23:14 +0000] "POST /api/auth/login HTTP/1.1" 200 265 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:23:20] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:23:20] INFO: ::1 - - [25/Dec/2024:07:23:20 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:23:20] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:23:20] INFO: ::1 - - [25/Dec/2024:07:23:20 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:23:24] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:23:24] INFO: ::1 - - [25/Dec/2024:07:23:24 +0000] "PUT /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:23:28] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:23:28] INFO: ::1 - - [25/Dec/2024:07:23:28 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:23:28] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:23:28] INFO: ::1 - - [25/Dec/2024:07:23:28 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:25:43] INFO: User logged in: hnguyen@gmail.com
+[2024-12-25 14:25:43] INFO: ::1 - - [25/Dec/2024:07:25:43 +0000] "POST /api/auth/login HTTP/1.1" 200 265 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:27:38] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:27:38] INFO: ::1 - - [25/Dec/2024:07:27:38 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:29:02] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:29:02] INFO: ::1 - - [25/Dec/2024:07:29:02 +0000] "PUT /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:34:55] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 14:34:55] INFO: ::1 - - [25/Dec/2024:07:34:55 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:34:56] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:34:56] INFO: ::1 - - [25/Dec/2024:07:34:56 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:34:56] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:34:56] INFO: ::1 - - [25/Dec/2024:07:34:56 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:38:39] INFO: Server is running on port 5000
+[2024-12-25 14:38:39] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 14:38:59] INFO: ::1 - - [25/Dec/2024:07:38:59 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:38:59] INFO: ::1 - - [25/Dec/2024:07:38:59 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:38:59] INFO: ::1 - - [25/Dec/2024:07:38:59 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:38:59] INFO: ::1 - - [25/Dec/2024:07:38:59 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:38:59] INFO: ::1 - - [25/Dec/2024:07:38:59 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:40:29] INFO: ::1 - - [25/Dec/2024:07:40:29 +0000] "POST /api/auth/login HTTP/1.1" 400 112 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:40:44] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 14:40:44] INFO: ::1 - - [25/Dec/2024:07:40:44 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:41:29] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:41:29] INFO: ::1 - - [25/Dec/2024:07:41:29 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:42:39] INFO: User registered: anna@gmail.com
+[2024-12-25 14:42:39] INFO: ::1 - - [25/Dec/2024:07:42:39 +0000] "POST /api/auth/register HTTP/1.1" 201 241 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:42:54] INFO: User logged in: anna@gmail.com
+[2024-12-25 14:42:54] INFO: ::1 - - [25/Dec/2024:07:42:54 +0000] "POST /api/auth/login HTTP/1.1" 200 241 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:43:28] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:43:28] INFO: ::1 - - [25/Dec/2024:07:43:28 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:46:01] INFO: ::1 - - [25/Dec/2024:07:46:01 +0000] "GET /api/auth/login HTTP/1.1" 404 153 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:46:10] INFO: User logged in: anna@gmail.com
+[2024-12-25 14:46:10] INFO: ::1 - - [25/Dec/2024:07:46:10 +0000] "POST /api/auth/login HTTP/1.1" 200 241 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:46:33] WARN: Invalid token: User does not exist or has been deleted (user_id=undefined)
+[2024-12-25 14:46:33] INFO: ::1 - - [25/Dec/2024:07:46:33 +0000] "GET /api/auth/profile HTTP/1.1" 401 43 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:51:09] INFO: Server is running on port 5000
+[2024-12-25 14:51:09] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 14:51:43] INFO: ::1 - - [25/Dec/2024:07:51:43 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:51:43] INFO: ::1 - - [25/Dec/2024:07:51:43 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:51:43] INFO: ::1 - - [25/Dec/2024:07:51:43 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:51:43] INFO: ::1 - - [25/Dec/2024:07:51:43 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:51:43] INFO: ::1 - - [25/Dec/2024:07:51:43 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:52:26] INFO: ::1 - - [25/Dec/2024:07:52:26 +0000] "POST /api/auth/login HTTP/1.1" 400 112 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:52:39] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 14:52:39] INFO: ::1 - - [25/Dec/2024:07:52:39 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:53:12] INFO: User authenticated: user_id=2
+[2024-12-25 14:53:12] INFO: ::1 - - [25/Dec/2024:07:53:12 +0000] "GET /api/auth/profile HTTP/1.1" 200 133 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:54:01] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 14:54:01] INFO: ::1 - - [25/Dec/2024:07:54:01 +0000] "POST /api/auth/login HTTP/1.1" 200 248 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:54:02] INFO: User authenticated: user_id=2
+[2024-12-25 14:54:02] INFO: ::1 - - [25/Dec/2024:07:54:02 +0000] "GET /api/auth/profile HTTP/1.1" 200 133 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:54:02] INFO: User authenticated: user_id=2
+[2024-12-25 14:54:02] INFO: ::1 - - [25/Dec/2024:07:54:02 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:55:35] INFO: User authenticated: user_id=2
+[2024-12-25 14:55:35] INFO: ::1 - - [25/Dec/2024:07:55:35 +0000] "PUT /api/auth/profile HTTP/1.1" 200 137 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 14:56:06] INFO: User authenticated: user_id=2
+[2024-12-25 14:56:06] INFO: ::1 - - [25/Dec/2024:07:56:06 +0000] "GET /api/auth/profile HTTP/1.1" 200 137 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:56:06] INFO: User authenticated: user_id=2
+[2024-12-25 14:56:06] INFO: ::1 - - [25/Dec/2024:07:56:06 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:56:37] INFO: User authenticated: user_id=2
+[2024-12-25 14:56:37] INFO: ::1 - - [25/Dec/2024:07:56:37 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:56:37] INFO: User authenticated: user_id=2
+[2024-12-25 14:56:37] INFO: ::1 - - [25/Dec/2024:07:56:37 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:56:52] INFO: User authenticated: user_id=2
+[2024-12-25 14:56:52] INFO: ::1 - - [25/Dec/2024:07:56:52 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:56:52] INFO: User authenticated: user_id=2
+[2024-12-25 14:56:52] INFO: ::1 - - [25/Dec/2024:07:56:52 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:57:34] INFO: User authenticated: user_id=2
+[2024-12-25 14:57:34] ERROR: Error updating user: Error updating user: could not determine data type of parameter $3
+[2024-12-25 14:57:34] INFO: ::1 - - [25/Dec/2024:07:57:34 +0000] "PUT /api/auth/profile HTTP/1.1" 500 32 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:57:41] INFO: User authenticated: user_id=2
+[2024-12-25 14:57:41] INFO: ::1 - - [25/Dec/2024:07:57:41 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 14:57:41] INFO: User authenticated: user_id=2
+[2024-12-25 14:57:41] INFO: ::1 - - [25/Dec/2024:07:57:41 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:02:29] INFO: User authenticated: user_id=2
+[2024-12-25 15:02:29] INFO: ::1 - - [25/Dec/2024:08:02:29 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:02:29] INFO: User authenticated: user_id=2
+[2024-12-25 15:02:29] INFO: ::1 - - [25/Dec/2024:08:02:29 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:07:11] INFO: User authenticated: user_id=2
+[2024-12-25 15:07:11] INFO: Category created for user 2: 1
+[2024-12-25 15:07:11] INFO: ::1 - - [25/Dec/2024:08:07:11 +0000] "POST /api/categories HTTP/1.1" 201 78 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 15:07:36] INFO: User authenticated: user_id=2
+[2024-12-25 15:07:36] INFO: ::1 - - [25/Dec/2024:08:07:36 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:07:36] INFO: User authenticated: user_id=2
+[2024-12-25 15:07:36] INFO: ::1 - - [25/Dec/2024:08:07:36 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:09:21] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 15:09:21] INFO: ::1 - - [25/Dec/2024:08:09:21 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:09:36] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 15:09:36] INFO: ::1 - - [25/Dec/2024:08:09:36 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:13:19] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 15:13:19] INFO: ::1 - - [25/Dec/2024:08:13:19 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:13:41] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 15:13:41] INFO: ::1 - - [25/Dec/2024:08:13:41 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:13:56] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 15:13:56] INFO: ::1 - - [25/Dec/2024:08:13:56 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:31:23] INFO: User authenticated: user_id=2
+[2024-12-25 15:31:23] INFO: ::1 - - [25/Dec/2024:08:31:23 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:31:23] INFO: User authenticated: user_id=2
+[2024-12-25 15:31:23] INFO: ::1 - - [25/Dec/2024:08:31:23 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:31:39] WARN: Login failed: Mật khẩu không chính xác cho email hungnguyen@gmail.com.
+[2024-12-25 15:31:39] INFO: ::1 - - [25/Dec/2024:08:31:39 +0000] "POST /api/auth/login HTTP/1.1" 400 58 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:32:12] INFO: User logged in: anna@gmail.com
+[2024-12-25 15:32:12] INFO: ::1 - - [25/Dec/2024:08:32:12 +0000] "POST /api/auth/login HTTP/1.1" 200 241 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:38:07] WARN: Access denied: Token missing
+[2024-12-25 15:38:07] INFO: ::1 - - [25/Dec/2024:08:38:07 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:38:07] WARN: Access denied: Token missing
+[2024-12-25 15:38:07] INFO: ::1 - - [25/Dec/2024:08:38:07 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:38:22] INFO: User authenticated: user_id=6
+[2024-12-25 15:38:22] ERROR: Error updating category 1735115893970 for user 6: Error updating category: value "1735115893970" is out of range for type integer
+[2024-12-25 15:38:22] INFO: ::1 - - [25/Dec/2024:08:38:22 +0000] "PUT /api/categories/1735115893970 HTTP/1.1" 400 95 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:38:25] INFO: User authenticated: user_id=6
+[2024-12-25 15:38:25] INFO: ::1 - - [25/Dec/2024:08:38:25 +0000] "GET /api/auth/profile HTTP/1.1" 200 126 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:38:25] INFO: User authenticated: user_id=6
+[2024-12-25 15:38:25] INFO: ::1 - - [25/Dec/2024:08:38:25 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:38:36] INFO: User authenticated: user_id=6
+[2024-12-25 15:38:36] ERROR: Error updating category 1735115893970 for user 6: Error updating category: value "1735115893970" is out of range for type integer
+[2024-12-25 15:38:36] INFO: ::1 - - [25/Dec/2024:08:38:36 +0000] "PUT /api/categories/1735115893970 HTTP/1.1" 400 95 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:39:34] INFO: User authenticated: user_id=6
+[2024-12-25 15:39:34] ERROR: Error updating category 1735115893970 for user 6: Error updating category: value "1735115893970" is out of range for type integer
+[2024-12-25 15:39:34] INFO: ::1 - - [25/Dec/2024:08:39:34 +0000] "PUT /api/categories/1735115893970 HTTP/1.1" 400 95 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:45:48] WARN: Access denied: Token missing
+[2024-12-25 15:45:48] INFO: ::1 - - [25/Dec/2024:08:45:48 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:45:48] WARN: Access denied: Token missing
+[2024-12-25 15:45:48] INFO: ::1 - - [25/Dec/2024:08:45:48 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:45:50] INFO: User authenticated: user_id=6
+[2024-12-25 15:45:50] INFO: Category created for user 6: 2
+[2024-12-25 15:45:50] INFO: ::1 - - [25/Dec/2024:08:45:50 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:46:17] WARN: Access denied: Token missing
+[2024-12-25 15:46:17] INFO: ::1 - - [25/Dec/2024:08:46:17 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:46:17] WARN: Access denied: Token missing
+[2024-12-25 15:46:17] INFO: ::1 - - [25/Dec/2024:08:46:17 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:46:19] WARN: Access denied: Token missing
+[2024-12-25 15:46:19] INFO: ::1 - - [25/Dec/2024:08:46:19 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 15:46:19] WARN: Access denied: Token missing
+[2024-12-25 15:46:19] INFO: ::1 - - [25/Dec/2024:08:46:19 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:19] INFO: Server is running on port 5000
+[2024-12-25 20:07:19] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 20:07:28] WARN: Access denied: Token missing
+[2024-12-25 20:07:28] INFO: ::1 - - [25/Dec/2024:13:07:28 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:28] WARN: Access denied: Token missing
+[2024-12-25 20:07:28] INFO: ::1 - - [25/Dec/2024:13:07:28 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:42] INFO: ::1 - - [25/Dec/2024:13:07:42 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:42] INFO: ::1 - - [25/Dec/2024:13:07:42 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:42] INFO: ::1 - - [25/Dec/2024:13:07:42 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:42] INFO: ::1 - - [25/Dec/2024:13:07:42 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:42] INFO: ::1 - - [25/Dec/2024:13:07:42 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:53] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 20:07:53] INFO: ::1 - - [25/Dec/2024:13:07:53 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:07:55] INFO: User authenticated: user_id=2
+[2024-12-25 20:07:55] INFO: Category created for user 2: 3
+[2024-12-25 20:07:55] INFO: ::1 - - [25/Dec/2024:13:07:55 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:10:38] WARN: Access denied: Token missing
+[2024-12-25 20:10:38] INFO: ::1 - - [25/Dec/2024:13:10:38 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:10:38] WARN: Access denied: Token missing
+[2024-12-25 20:10:38] INFO: ::1 - - [25/Dec/2024:13:10:38 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:10:55] INFO: User authenticated: user_id=2
+[2024-12-25 20:10:55] INFO: Category created for user 2: 4
+[2024-12-25 20:10:55] INFO: ::1 - - [25/Dec/2024:13:10:55 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:10:55] INFO: User authenticated: user_id=2
+[2024-12-25 20:10:56] INFO: Category created for user 2: 5
+[2024-12-25 20:10:56] INFO: ::1 - - [25/Dec/2024:13:10:56 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:05] WARN: Access denied: Token missing
+[2024-12-25 20:11:05] INFO: ::1 - - [25/Dec/2024:13:11:05 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:05] WARN: Access denied: Token missing
+[2024-12-25 20:11:05] INFO: ::1 - - [25/Dec/2024:13:11:05 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:15] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 20:11:15] INFO: ::1 - - [25/Dec/2024:13:11:15 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:25] INFO: User authenticated: user_id=2
+[2024-12-25 20:11:25] INFO: ::1 - - [25/Dec/2024:13:11:25 +0000] "GET /api/auth/profile HTTP/1.1" 200 137 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:25] INFO: User authenticated: user_id=2
+[2024-12-25 20:11:25] INFO: ::1 - - [25/Dec/2024:13:11:25 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:52] WARN: Access denied: Token missing
+[2024-12-25 20:11:52] INFO: ::1 - - [25/Dec/2024:13:11:52 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:11:52] WARN: Access denied: Token missing
+[2024-12-25 20:11:52] INFO: ::1 - - [25/Dec/2024:13:11:52 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:27] WARN: Access denied: Token missing
+[2024-12-25 20:19:27] INFO: ::1 - - [25/Dec/2024:13:19:27 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:27] WARN: Access denied: Token missing
+[2024-12-25 20:19:27] INFO: ::1 - - [25/Dec/2024:13:19:27 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:41] WARN: Access denied: Token missing
+[2024-12-25 20:19:41] INFO: ::1 - - [25/Dec/2024:13:19:41 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:41] WARN: Access denied: Token missing
+[2024-12-25 20:19:41] INFO: ::1 - - [25/Dec/2024:13:19:41 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:46] INFO: User authenticated: user_id=2
+[2024-12-25 20:19:46] INFO: Category created for user 2: 6
+[2024-12-25 20:19:46] INFO: ::1 - - [25/Dec/2024:13:19:46 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:50] INFO: User authenticated: user_id=2
+[2024-12-25 20:19:50] INFO: Category created for user 2: 7
+[2024-12-25 20:19:50] INFO: ::1 - - [25/Dec/2024:13:19:50 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:51] INFO: User authenticated: user_id=2
+[2024-12-25 20:19:51] INFO: Category created for user 2: 8
+[2024-12-25 20:19:51] INFO: ::1 - - [25/Dec/2024:13:19:51 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:51] INFO: User authenticated: user_id=2
+[2024-12-25 20:19:51] INFO: Category created for user 2: 9
+[2024-12-25 20:19:51] INFO: ::1 - - [25/Dec/2024:13:19:51 +0000] "POST /api/categories HTTP/1.1" 201 78 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:52] INFO: User authenticated: user_id=2
+[2024-12-25 20:19:52] INFO: Category created for user 2: 10
+[2024-12-25 20:19:52] INFO: ::1 - - [25/Dec/2024:13:19:52 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:19:53] INFO: User authenticated: user_id=2
+[2024-12-25 20:19:53] INFO: Category created for user 2: 11
+[2024-12-25 20:19:53] INFO: ::1 - - [25/Dec/2024:13:19:53 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:28:49] INFO: User authenticated: user_id=2
+[2024-12-25 20:28:49] INFO: Category created for user 2: 12
+[2024-12-25 20:28:49] INFO: ::1 - - [25/Dec/2024:13:28:49 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:28:50] INFO: User authenticated: user_id=2
+[2024-12-25 20:28:50] INFO: Category created for user 2: 13
+[2024-12-25 20:28:50] INFO: ::1 - - [25/Dec/2024:13:28:50 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:30:32] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 20:30:32] INFO: ::1 - - [25/Dec/2024:13:30:32 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 20:31:25] INFO: User authenticated: user_id=2
+[2024-12-25 20:31:25] INFO: Category created for user 2: 14
+[2024-12-25 20:31:25] INFO: ::1 - - [25/Dec/2024:13:31:25 +0000] "POST /api/categories HTTP/1.1" 201 78 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 20:31:51] INFO: User authenticated: user_id=2
+[2024-12-25 20:31:51] INFO: Categories retrieved for user 2
+[2024-12-25 20:31:51] INFO: ::1 - - [25/Dec/2024:13:31:51 +0000] "GET /api/categories HTTP/1.1" 200 1032 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 20:34:31] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:31] INFO: Category created for user 2: 15
+[2024-12-25 20:34:31] INFO: ::1 - - [25/Dec/2024:13:34:31 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:34:32] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:32] INFO: Category created for user 2: 16
+[2024-12-25 20:34:32] INFO: ::1 - - [25/Dec/2024:13:34:32 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:34:33] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:33] INFO: Category created for user 2: 17
+[2024-12-25 20:34:33] INFO: ::1 - - [25/Dec/2024:13:34:33 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:34:33] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:33] INFO: Category created for user 2: 18
+[2024-12-25 20:34:33] INFO: ::1 - - [25/Dec/2024:13:34:33 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:34:43] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:43] INFO: ::1 - - [25/Dec/2024:13:34:43 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:34:43] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:43] INFO: ::1 - - [25/Dec/2024:13:34:43 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:34:48] INFO: User authenticated: user_id=2
+[2024-12-25 20:34:48] INFO: Category created for user 2: 19
+[2024-12-25 20:34:48] INFO: ::1 - - [25/Dec/2024:13:34:48 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:04] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:04] INFO: Category created for user 2: 20
+[2024-12-25 20:38:04] INFO: ::1 - - [25/Dec/2024:13:38:04 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:12] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:12] INFO: Category created for user 2: 21
+[2024-12-25 20:38:12] INFO: ::1 - - [25/Dec/2024:13:38:12 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:15] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:15] INFO: Category created for user 2: 22
+[2024-12-25 20:38:15] INFO: ::1 - - [25/Dec/2024:13:38:15 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:26] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 20:38:26] INFO: ::1 - - [25/Dec/2024:13:38:26 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:28] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:28] INFO: Category created for user 2: 23
+[2024-12-25 20:38:28] INFO: ::1 - - [25/Dec/2024:13:38:28 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:32] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:33] INFO: Category created for user 2: 24
+[2024-12-25 20:38:33] INFO: ::1 - - [25/Dec/2024:13:38:33 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:36] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:36] INFO: Category created for user 2: 25
+[2024-12-25 20:38:36] INFO: ::1 - - [25/Dec/2024:13:38:36 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:38:40] INFO: User authenticated: user_id=2
+[2024-12-25 20:38:40] INFO: Category created for user 2: 26
+[2024-12-25 20:38:40] INFO: ::1 - - [25/Dec/2024:13:38:40 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:48:52] WARN: Access denied: Token missing
+[2024-12-25 20:48:52] INFO: ::1 - - [25/Dec/2024:13:48:52 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:02] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:02] INFO: Category created for user 2: 27
+[2024-12-25 20:49:02] INFO: ::1 - - [25/Dec/2024:13:49:02 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:03] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:03] INFO: Category created for user 2: 28
+[2024-12-25 20:49:03] INFO: ::1 - - [25/Dec/2024:13:49:03 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:03] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:03] INFO: Category created for user 2: 29
+[2024-12-25 20:49:03] INFO: ::1 - - [25/Dec/2024:13:49:03 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:04] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:04] INFO: Category created for user 2: 30
+[2024-12-25 20:49:04] INFO: ::1 - - [25/Dec/2024:13:49:04 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:04] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:04] INFO: Category created for user 2: 31
+[2024-12-25 20:49:04] INFO: ::1 - - [25/Dec/2024:13:49:04 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:04] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:04] INFO: Category created for user 2: 32
+[2024-12-25 20:49:04] INFO: ::1 - - [25/Dec/2024:13:49:04 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:49:04] INFO: User authenticated: user_id=2
+[2024-12-25 20:49:04] INFO: Category created for user 2: 33
+[2024-12-25 20:49:04] INFO: ::1 - - [25/Dec/2024:13:49:04 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:50:08] INFO: User authenticated: user_id=2
+[2024-12-25 20:50:08] INFO: Category created for user 2: 34
+[2024-12-25 20:50:08] INFO: ::1 - - [25/Dec/2024:13:50:08 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:51:24] INFO: User authenticated: user_id=2
+[2024-12-25 20:51:24] INFO: Category created for user 2: 35
+[2024-12-25 20:51:24] INFO: ::1 - - [25/Dec/2024:13:51:24 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:53:29] INFO: User authenticated: user_id=2
+[2024-12-25 20:53:29] INFO: Category created for user 2: 36
+[2024-12-25 20:53:29] INFO: ::1 - - [25/Dec/2024:13:53:29 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:53:32] INFO: User authenticated: user_id=2
+[2024-12-25 20:53:32] INFO: Category created for user 2: 37
+[2024-12-25 20:53:32] INFO: ::1 - - [25/Dec/2024:13:53:32 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:55:48] WARN: Access denied: Token missing
+[2024-12-25 20:55:48] INFO: ::1 - - [25/Dec/2024:13:55:48 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:55:48] WARN: Access denied: Token missing
+[2024-12-25 20:55:48] INFO: ::1 - - [25/Dec/2024:13:55:48 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:55:50] INFO: User authenticated: user_id=2
+[2024-12-25 20:55:50] INFO: Category created for user 2: 38
+[2024-12-25 20:55:50] INFO: ::1 - - [25/Dec/2024:13:55:50 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:55:51] INFO: User authenticated: user_id=2
+[2024-12-25 20:55:51] INFO: Category created for user 2: 39
+[2024-12-25 20:55:51] INFO: ::1 - - [25/Dec/2024:13:55:51 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:56:14] INFO: User authenticated: user_id=2
+[2024-12-25 20:56:14] INFO: Category created for user 2: 40
+[2024-12-25 20:56:14] INFO: ::1 - - [25/Dec/2024:13:56:14 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:56:16] INFO: User authenticated: user_id=2
+[2024-12-25 20:56:16] INFO: Category created for user 2: 41
+[2024-12-25 20:56:16] INFO: ::1 - - [25/Dec/2024:13:56:16 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:56:18] INFO: User authenticated: user_id=2
+[2024-12-25 20:56:18] INFO: Category created for user 2: 42
+[2024-12-25 20:56:18] INFO: ::1 - - [25/Dec/2024:13:56:18 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 20:57:42] INFO: User authenticated: user_id=2
+[2024-12-25 20:57:42] INFO: Categories retrieved for user 2
+[2024-12-25 20:57:42] INFO: ::1 - - [25/Dec/2024:13:57:42 +0000] "GET /api/categories HTTP/1.1" 200 3272 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 21:00:36] INFO: User authenticated: user_id=2
+[2024-12-25 21:00:36] INFO: Category created for user 2: 43
+[2024-12-25 21:00:36] INFO: ::1 - - [25/Dec/2024:14:00:36 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:05:18] INFO: User authenticated: user_id=2
+[2024-12-25 21:05:18] INFO: Category created for user 2: 44
+[2024-12-25 21:05:18] INFO: ::1 - - [25/Dec/2024:14:05:18 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:05:45] INFO: User authenticated: user_id=2
+[2024-12-25 21:05:45] INFO: Category created for user 2: 45
+[2024-12-25 21:05:45] INFO: ::1 - - [25/Dec/2024:14:05:45 +0000] "POST /api/categories HTTP/1.1" 201 79 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:29] INFO: Server is running on port 5000
+[2024-12-25 21:07:29] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 21:07:30] WARN: Access denied: Token missing
+[2024-12-25 21:07:30] INFO: ::1 - - [25/Dec/2024:14:07:30 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:30] WARN: Access denied: Token missing
+[2024-12-25 21:07:30] INFO: ::1 - - [25/Dec/2024:14:07:30 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:59] INFO: ::1 - - [25/Dec/2024:14:07:59 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:59] INFO: ::1 - - [25/Dec/2024:14:07:59 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:59] INFO: ::1 - - [25/Dec/2024:14:07:59 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:59] INFO: ::1 - - [25/Dec/2024:14:07:59 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:07:59] INFO: ::1 - - [25/Dec/2024:14:07:59 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:08:19] INFO: User logged in: tuanduy@gmail.com
+[2024-12-25 21:08:19] INFO: ::1 - - [25/Dec/2024:14:08:19 +0000] "POST /api/auth/login HTTP/1.1" 200 252 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:08:20] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:20] INFO: ::1 - - [25/Dec/2024:14:08:20 +0000] "POST /api/categories HTTP/1.1" 401 65 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] INFO: ::1 - - [25/Dec/2024:14:08:22 +0000] "POST /api/categories HTTP/1.1" 401 65 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] INFO: ::1 - - [25/Dec/2024:14:08:22 +0000] "POST /api/categories HTTP/1.1" 401 65 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] INFO: ::1 - - [25/Dec/2024:14:08:22 +0000] "POST /api/categories HTTP/1.1" 401 65 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:08:22] ERROR: Token verification failed: jwt malformed
+[2024-12-25 21:08:22] INFO: ::1 - - [25/Dec/2024:14:08:22 +0000] "POST /api/categories HTTP/1.1" 401 65 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:13:22] WARN: Access denied: Token missing
+[2024-12-25 21:13:22] INFO: ::1 - - [25/Dec/2024:14:13:22 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:13:22] WARN: Access denied: Token missing
+[2024-12-25 21:13:22] INFO: ::1 - - [25/Dec/2024:14:13:22 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:59:09] WARN: Access denied: Token missing
+[2024-12-25 21:59:09] INFO: ::1 - - [25/Dec/2024:14:59:09 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 21:59:09] WARN: Access denied: Token missing
+[2024-12-25 21:59:09] INFO: ::1 - - [25/Dec/2024:14:59:09 +0000] "GET /api/categories HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:35:24] INFO: Server is running on port 5000
+[2024-12-25 22:35:24] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-25 22:35:32] INFO: ::1 - - [25/Dec/2024:15:35:32 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:35:33] INFO: ::1 - - [25/Dec/2024:15:35:33 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:35:33] INFO: ::1 - - [25/Dec/2024:15:35:33 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:35:33] INFO: ::1 - - [25/Dec/2024:15:35:33 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:35:33] INFO: ::1 - - [25/Dec/2024:15:35:33 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:36:34] INFO: User registered: hungnguyen1@gmail.com
+[2024-12-25 22:36:34] INFO: ::1 - - [25/Dec/2024:15:36:34 +0000] "POST /api/auth/register HTTP/1.1" 201 256 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 22:36:59] INFO: User logged in: hungnguyen1@gmail.com
+[2024-12-25 22:36:59] INFO: ::1 - - [25/Dec/2024:15:36:59 +0000] "POST /api/auth/login HTTP/1.1" 200 256 "-" "PostmanRuntime/7.43.0"
+[2024-12-25 22:37:33] INFO: User logged in: hungnguyen1@gmail.com
+[2024-12-25 22:37:33] INFO: ::1 - - [25/Dec/2024:15:37:33 +0000] "POST /api/auth/login HTTP/1.1" 200 256 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:38:16] INFO: User logged in: hungnguyen1@gmail.com
+[2024-12-25 22:38:16] INFO: ::1 - - [25/Dec/2024:15:38:16 +0000] "POST /api/auth/login HTTP/1.1" 200 256 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:38:46] INFO: User registered: 12345678@gmail.com
+[2024-12-25 22:38:46] INFO: ::1 - - [25/Dec/2024:15:38:46 +0000] "POST /api/auth/register HTTP/1.1" 201 249 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-25 22:39:01] INFO: User logged in: 12345678@gmail.com
+[2024-12-25 22:39:01] INFO: ::1 - - [25/Dec/2024:15:39:01 +0000] "POST /api/auth/login HTTP/1.1" 200 249 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"

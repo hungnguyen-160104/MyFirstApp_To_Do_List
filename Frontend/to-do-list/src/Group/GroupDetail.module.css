@@ -1,0 +1,114 @@
+.groupDetail {
+  min-height: 100vh;
+  background-image: url("./photo-1-16627016946931834475205.webp"); /* Hình nền */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.groupDetailContainer {
+  max-width: 600px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Nền trắng mờ */
+  backdrop-filter: blur(10px); /* Làm mờ nền phía sau */
+  -webkit-backdrop-filter: blur(10px); /* Hỗ trợ Safari */
+  border-radius: 15px; /* Bo góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  text-align: left;
+}
+
+.groupDetailTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase; /* In hoa tiêu đề */
+}
+
+.groupDetailContent {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.groupDetailContent strong {
+  color: #333; /* Tô đậm nhãn */
+}
+
+.memberList {
+  margin-top: 10px;
+  padding-left: 0; /* Xóa thụt lề mặc định */
+  list-style: none; /* Xóa dấu đầu dòng */
+}
+
+.memberItem {
+  display: flex;
+  justify-content: space-between; /* Căn đều nội dung */
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px; /* Bo góc mỗi dòng */
+  background-color: rgba(255, 255, 255, 0.8); /* Nền mờ nhẹ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.memberName {
+  font-size: 16px;
+  color: #333;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.deleteButton:hover {
+  transform: scale(1.2); /* Phóng to nút khi hover */
+}
+
+.addMemberButton {
+  margin: 10px auto;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addMemberButton:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+.backButton {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.backButton:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}

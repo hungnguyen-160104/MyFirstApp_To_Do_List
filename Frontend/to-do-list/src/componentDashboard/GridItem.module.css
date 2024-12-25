@@ -1,0 +1,63 @@
+.grid-item {
+  background-color: #ffe6e6; /* Nền đỏ nhạt */
+  border-radius: 8px; /* Bo tròn góc cạnh */
+  height: 100px; /* Chiều cao cố định */
+  width: 100%; /* Chiều rộng tự động theo lưới */
+  display: flex; /* Hiển thị flexbox */
+  justify-content: space-between; /* Căn chỉnh nội dung và nút */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 15px; /* Khoảng cách bên trong */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Hiệu ứng hover */
+  cursor: pointer; /* Biểu thị con trỏ chuột */
+  font-weight: bold; /* Chữ đậm */
+  text-align: center; /* Căn giữa nội dung */
+  color: #ffffff; /* Màu chữ trắng */
+}
+
+.grid-item:hover {
+  background-color: #ff9999; /* Nền đỏ đậm hơn khi hover */
+  transform: scale(1.03); /* Phóng to nhẹ */
+}
+
+.grid-item input {
+  width: 85%; /* Chiếm 85% chiều rộng */
+  border: 2px solid #ff4d4d; /* Viền màu đỏ đậm */
+  border-radius: 4px; /* Bo tròn viền */
+  font-size: 0.9rem; /* Kích thước chữ nhỏ */
+  text-align: center; /* Căn giữa văn bản */
+  outline: none; /* Loại bỏ viền mặc định khi focus */
+  padding: 5px 10px; /* Thêm khoảng cách bên trong */
+  background-color: #ffffff; /* Nền trắng */
+  color: #ff4d4d; /* Màu chữ đỏ */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Hiệu ứng viền trong */
+}
+
+.grid-item input:focus {
+  border-color: #ff1a1a; /* Đổi màu viền khi focus */
+  box-shadow: 0 0 5px rgba(255, 26, 26, 0.5); /* Hiệu ứng ánh sáng khi focus */
+}
+
+.grid-item .edit-button {
+  display: flex; /* Hiển thị flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  width: 35px; /* Chiều rộng nút */
+  height: 35px; /* Chiều cao nút */
+  background-color: #ff4d4d; /* Nền đỏ */
+  border-radius: 50%; /* Nút tròn */
+  margin-left: 10px; /* Khoảng cách bên trái */
+  cursor: pointer; /* Biểu thị con trỏ chuột */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng hover */
+}
+
+.grid-item .edit-button:hover {
+  background-color: #ff1a1a; /* Nền đỏ đậm khi hover */
+  transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+.grid-item .edit-button svg {
+  font-size: 1.2rem; /* Kích thước biểu tượng */
+  color: #ffffff; /* Màu biểu tượng trắng */
+  transition: color 0.3s ease; /* Hiệu ứng đổi màu */
+}

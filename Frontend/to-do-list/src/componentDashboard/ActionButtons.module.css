@@ -1,0 +1,38 @@
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px; /* Tăng khoảng cách giữa các nút */
+  padding: 15px; /* Thêm padding để tạo khoảng trống xung quanh */
+}
+
+.icon-button {
+  background-color: #ffffff; /* Nền trắng để làm nổi bật */
+  border: 2px solid #b45252; /* Thêm viền đỏ nhạt để dễ nhìn */
+  border-radius: 50%; /* Bo tròn nút */
+  width: 50px; /* Đảm bảo kích thước đồng nhất */
+  height: 50px; /* Đảm bảo kích thước đồng nhất */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: #ffd1d1; /* Màu nền đỏ nhạt khi hover */
+  border-color: #ff5252; /* Đổi màu viền khi hover */
+  transform: scale(1.2); /* Phóng to nhẹ khi hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Tăng đổ bóng khi hover */
+}
+
+.icon-button svg {
+  color: #b45252; /* Màu đỏ nhạt cho biểu tượng */
+  font-size: 2rem; /* Tăng kích thước biểu tượng */
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover svg {
+  color: #ff5252; /* Đổi màu biểu tượng khi hover */
+}

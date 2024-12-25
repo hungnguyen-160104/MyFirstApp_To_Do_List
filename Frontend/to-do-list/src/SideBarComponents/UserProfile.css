@@ -1,0 +1,159 @@
+/* Tổng quan container */
+.user-profile-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.user-profile-container {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.6); /* Nền trắng trong mờ */
+  backdrop-filter: blur(10px); /* Hiệu ứng làm mờ nền */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Viền mờ nhẹ */
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* Nội dung bên trong */
+.user-profile-content {
+  padding: 10px;
+}
+
+/* Header */
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile-header .avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-profile-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Thông tin cá nhân */
+.user-profile-info p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.user-profile-info strong {
+  color: #333;
+}
+
+/* Form chỉnh sửa */
+.user-profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-profile-edit-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #555;
+}
+
+.user-profile-edit-form input,
+.user-profile-edit-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-profile-edit-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.user-profile-edit-form input:focus,
+.user-profile-edit-form textarea:focus {
+  border-color: #3f51b5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.3);
+}
+
+/* Buttons */
+.user-profile-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.user-profile-buttons .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Nút chính (primary) */
+.user-profile-buttons .btn.primary {
+  background-color: rgba(255, 255, 255, 0.8); /* Trắng mờ */
+  color: #333; /* Màu chữ đậm */
+  border: 1px solid #ccc; /* Viền mờ */
+  transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển màu */
+}
+
+.user-profile-buttons .btn.primary:hover {
+  background-color: #f4511e; /* Đổi sang màu đỏ */
+  color: #fff; /* Màu chữ trắng khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ */
+}
+
+/* Nút phụ (secondary) */
+.user-profile-buttons .btn.secondary {
+  background-color: #fff; /* Màu đỏ ban đầu */
+  color: #333; /* Màu chữ trắng #f4511e */
+  border: 1px solid #ccc; /* Viền mờ */
+  transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển màu */
+}
+
+.user-profile-buttons .btn.secondary:hover {
+  background-color: #f4511e; /* Đổi sang màu xám nhạt */
+  color: #333; /* Màu chữ tối khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ */
+}
+

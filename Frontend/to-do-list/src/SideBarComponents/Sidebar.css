@@ -1,0 +1,86 @@
+.sidebar {
+  width: 250px; /* Độ rộng của sidebar */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  padding: 20px; /* Khoảng cách padding */
+  box-sizing: border-box; /* Bao gồm padding trong kích thước */
+  font-family: Arial, sans-serif; /* Font chữ của sidebar */
+
+  /* Xóa hoàn toàn nền và hiệu ứng */
+  background-color: transparent !important; /* Nền trong suốt */
+  backdrop-filter: none !important; /* Xóa hiệu ứng làm mờ */
+  -webkit-backdrop-filter: none !important; /* Xóa hiệu ứng trên Safari */
+
+  border-right: none !important; /* Xóa viền */
+  box-shadow: none !important; /* Xóa hiệu ứng bóng */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent !important; /* Xóa nền nếu có */
+  border: none !important; /* Đảm bảo không có viền */
+  box-shadow: none !important; /* Đảm bảo không có bóng */
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 4px; /* Bo góc */
+  transition: background-color 0.3s, transform 0.2s;
+  color: #333; /* Màu chữ tối để dễ đọc trên nền ảnh */
+
+  background-color: transparent !important; /* Xóa nền */
+  border: none !important; /* Xóa viền */
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Nhấn nhá nhẹ khi hover */
+  transform: scale(1.02); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+.item-name {
+  flex-grow: 1;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 12px 16px; /* Khoảng cách trong nút */
+  color: rgb(12, 12, 12); /* Màu chữ */
+  background-color: #1976d2; /* Màu xanh đặc trưng */
+  border: none; /* Xóa viền */
+  border-radius: 8px; /* Bo góc mềm mại */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase; /* Chuyển thành chữ in hoa */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng mượt */
+}
+
+.add-button:hover {
+  background-color: #1565c0; /* Màu xanh đậm hơn khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+}
+
+.add-button:active {
+  background-color: #0d47a1; /* Màu đậm hơn khi bấm */
+  transform: scale(0.98); /* Thu nhỏ nhẹ khi nhấn */
+}
+
+.add-button svg {
+  margin-right: 8px; /* Khoảng cách giữa biểu tượng và văn bản */
+  font-size: 18px; /* Kích thước biểu tượng */
+}
+
+.add-button span {
+  font-size: 14px; /* Kích thước văn bản */
+  font-weight: bold;
+}

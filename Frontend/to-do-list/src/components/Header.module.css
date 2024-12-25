@@ -1,0 +1,52 @@
+.header {
+  background-color: rgba(183, 28, 28, 0.9); /* Màu đỏ đậm với độ trong suốt */
+  backdrop-filter: blur(5px); /* Làm mờ ảnh nền phía sau */
+  color: white; /* Màu chữ trắng */
+  display: flex;
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  justify-content: space-between; /* Phân chia khoảng cách hai bên */
+  padding: 10px 20px; /* Khoảng cách nội dung bên trong */
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center; /* Căn giữa logo và text theo chiều dọc */
+}
+
+.logoImage {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.logoText {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.logoSubText {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.titleContainer {
+  text-align: center;
+  flex: 1;
+}
+
+.mainTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase; /* Chuyển đổi chữ thành in hoa */
+  margin-right: 220px; /* Tạo khoảng cách từ lề trái */
+}
+
+.subTitle {
+  margin: 0;
+  font-size: 14px;
+  margin-right: 220px;
+}

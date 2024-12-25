@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Cột linh hoạt */
+  gap: 15px; /* Khoảng cách giữa các ô */
+  padding: 20px; /* Khoảng cách bên trong lưới */
+}
+
+.grid-item {
+  background-color: #ffe6e6; /* Nền đỏ nhạt */
+  border-radius: 8px; /* Bo tròn góc */
+  height: 100px; /* Chiều cao cố định */
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  font-size: 1.2rem; /* Kích thước chữ lớn */
+  color: #ffffff; /* Màu chữ trắng */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+  cursor: pointer; /* Hiển thị con trỏ dạng tay */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Hiệu ứng nổi lên khi hover */
+  background-color: #ff9999; /* Nền đỏ đậm hơn khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng đậm hơn */
+}

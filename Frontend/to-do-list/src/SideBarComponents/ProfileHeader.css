@@ -1,0 +1,31 @@
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: none; /* Loại bỏ đường viền dưới */
+  background-color: rgba(255, 255, 255, 0.7); /* Nền trắng mờ nhẹ */
+  border-radius: 8px; /* Bo góc nhẹ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f48fb1; /* Màu hồng nhạt cho avatar */
+  color: #fff; /* Màu chữ trắng */
+  font-weight: bold;
+  font-size: 16px; /* Tăng kích thước chữ bên trong avatar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng cho avatar */
+}
+
+.profile-title {
+  font-size: 18px; /* Giữ kích thước chữ lớn */
+  font-weight: bold;
+  color: #333; /* Đảm bảo chữ dễ đọc */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Thêm viền sáng xung quanh chữ */
+}

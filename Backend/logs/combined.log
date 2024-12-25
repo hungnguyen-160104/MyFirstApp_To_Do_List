@@ -1,0 +1,95 @@
+2024-12-16 23:24:01 info: Server is running on port 5000
+2024-12-16 23:24:01 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-16 23:56:55 info: User john_doe seeded successfully.
+2024-12-16 23:56:55 info: User jane_smith seeded successfully.
+2024-12-16 23:56:55 info: User alice_wonder seeded successfully.
+2024-12-16 23:56:56 info: User bob_builder seeded successfully.
+2024-12-16 23:56:56 info: User charlie_brown seeded successfully.
+2024-12-17 15:46:23 info: Server is running on port 5000
+2024-12-17 15:46:23 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-17 15:49:47 info: ::1 - - [17/Dec/2024:08:49:47 +0000] "GET /api-docs HTTP/1.1" 301 158 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 15:49:47 info: ::1 - - [17/Dec/2024:08:49:47 +0000] "GET /api-docs/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 15:49:47 info: ::1 - - [17/Dec/2024:08:49:47 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 20839 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 15:49:47 info: ::1 - - [17/Dec/2024:08:49:47 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 200 152072 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 15:49:47 info: ::1 - - [17/Dec/2024:08:49:47 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 230007 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 15:49:47 info: ::1 - - [17/Dec/2024:08:49:47 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1426050 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 15:49:49 info: ::1 - - [17/Dec/2024:08:49:49 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 17:07:15 info: Server is running on port 5000
+2024-12-17 17:07:15 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-17 23:04:39 info: Server is running on port 5000
+2024-12-17 23:04:39 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-17 23:04:52 info: ::1 - - [17/Dec/2024:16:04:52 +0000] "GET /api-docs HTTP/1.1" 301 158 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 23:04:52 info: ::1 - - [17/Dec/2024:16:04:52 +0000] "GET /api-docs/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 23:04:52 info: ::1 - - [17/Dec/2024:16:04:52 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 20839 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 23:04:52 info: ::1 - - [17/Dec/2024:16:04:52 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 200 152072 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 23:04:52 info: ::1 - - [17/Dec/2024:16:04:52 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 230007 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 23:04:52 info: ::1 - - [17/Dec/2024:16:04:52 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1426050 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-17 23:05:16 info: ::1 - - [17/Dec/2024:16:05:16 +0000] "POST /api/auth/register HTTP/1.1" 400 235 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-18 23:09:24 info: Server is running on port 5000
+2024-12-18 23:09:24 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-18 23:09:40 info: ::1 - - [18/Dec/2024:16:09:40 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-18 23:09:40 info: ::1 - - [18/Dec/2024:16:09:40 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-18 23:09:40 info: ::1 - - [18/Dec/2024:16:09:40 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 20786 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-18 23:09:40 info: ::1 - - [18/Dec/2024:16:09:40 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-18 23:09:40 info: ::1 - - [18/Dec/2024:16:09:40 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-18 23:30:12 info: ::1 - - [18/Dec/2024:16:30:12 +0000] "POST /api/auth/register HTTP/1.1" 400 235 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 00:06:53 info: ::1 - - [18/Dec/2024:17:06:53 +0000] "GET / HTTP/1.1" 200 29 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 00:06:53 info: ::1 - - [18/Dec/2024:17:06:53 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 00:22:18 info: Server is running on port 5000
+2024-12-19 00:22:18 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-19 00:23:27 info: ::1 - - [18/Dec/2024:17:23:27 +0000] "POST /api/auth/register HTTP/1.1" 400 378 "-" "PostmanRuntime/7.43.0"
+2024-12-19 00:30:18 info: ::1 - - [18/Dec/2024:17:30:18 +0000] "POST /api/auth/register HTTP/1.1" 400 378 "-" "PostmanRuntime/7.43.0"
+2024-12-19 00:31:51 info: ::1 - - [18/Dec/2024:17:31:51 +0000] "POST /api/auth/register HTTP/1.1" 400 378 "-" "PostmanRuntime/7.43.0"
+2024-12-19 00:55:38 info: User registered: newemail@example.com
+2024-12-19 00:55:38 info: ::1 - - [18/Dec/2024:17:55:38 +0000] "POST /api/auth/register HTTP/1.1" 201 273 "-" "PostmanRuntime/7.43.0"
+2024-12-19 00:57:46 info: User registered: laithuy03th@gmail.com
+2024-12-19 00:57:46 info: ::1 - - [18/Dec/2024:17:57:46 +0000] "POST /api/auth/register HTTP/1.1" 201 275 "-" "PostmanRuntime/7.43.0"
+2024-12-19 01:04:31 info: User logged in: laithuy03th@gmail.com
+2024-12-19 01:04:31 info: ::1 - - [18/Dec/2024:18:04:31 +0000] "POST /api/auth/login HTTP/1.1" 200 275 "-" "PostmanRuntime/7.43.0"
+2024-12-19 02:16:18 info: User logged in: laithuy03th@gmail.com
+2024-12-19 02:16:18 info: ::1 - - [18/Dec/2024:19:16:18 +0000] "POST /api/auth/login HTTP/1.1" 200 275 "-" "PostmanRuntime/7.43.0"
+2024-12-19 02:17:07 info: User logged in: laithuy03th@gmail.com
+2024-12-19 02:17:07 info: ::1 - - [18/Dec/2024:19:17:07 +0000] "POST /api/auth/login HTTP/1.1" 200 275 "-" "PostmanRuntime/7.43.0"
+2024-12-19 02:17:20 info: ::1 - - [18/Dec/2024:19:17:20 +0000] "POST /api/ HTTP/1.1" 404 144 "-" "PostmanRuntime/7.43.0"
+2024-12-19 09:53:19 info: Server is running on port 5000
+2024-12-19 09:53:19 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-19 09:53:38 info: ::1 - - [19/Dec/2024:02:53:38 +0000] "POST /api/login HTTP/1.1" 404 149 "-" "PostmanRuntime/7.43.0"
+2024-12-19 09:54:35 info: ::1 - - [19/Dec/2024:02:54:35 +0000] "POST /api/register HTTP/1.1" 404 152 "-" "PostmanRuntime/7.43.0"
+2024-12-19 09:58:15 info: ::1 - - [19/Dec/2024:02:58:15 +0000] "POST /api/register HTTP/1.1" 404 152 "-" "PostmanRuntime/7.43.0"
+2024-12-19 10:16:50 warn: Registration failed: Email laithuy03th@gmail.com đã được sử dụng.
+2024-12-19 10:16:50 info: ::1 - - [19/Dec/2024:03:16:50 +0000] "POST /api/auth/register HTTP/1.1" 400 45 "-" "PostmanRuntime/7.43.0"
+2024-12-19 10:17:14 info: User registered: laithuy04th@gmail.com
+2024-12-19 10:17:14 info: ::1 - - [19/Dec/2024:03:17:14 +0000] "POST /api/auth/register HTTP/1.1" 201 279 "-" "PostmanRuntime/7.43.0"
+2024-12-19 10:19:21 info: User logged in: laithuy04th@gmail.com
+2024-12-19 10:19:21 info: ::1 - - [19/Dec/2024:03:19:21 +0000] "POST /api/auth/login HTTP/1.1" 200 279 "-" "PostmanRuntime/7.43.0"
+2024-12-19 15:22:33 info: ::1 - - [19/Dec/2024:08:22:33 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 15:22:33 info: ::1 - - [19/Dec/2024:08:22:33 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 15:22:33 info: ::1 - - [19/Dec/2024:08:22:33 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 15:22:33 info: ::1 - - [19/Dec/2024:08:22:33 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 15:22:34 info: ::1 - - [19/Dec/2024:08:22:34 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 15:52:44 info: User logged in: laithuy04th@gmail.com
+2024-12-19 15:52:44 info: ::1 - - [19/Dec/2024:08:52:44 +0000] "POST /api/auth/login HTTP/1.1" 200 279 "-" "PostmanRuntime/7.43.0"
+2024-12-19 15:57:07 info: User logged in: laithuy04th@gmail.com
+2024-12-19 15:57:07 info: ::1 - - [19/Dec/2024:08:57:07 +0000] "POST /api/auth/login HTTP/1.1" 200 279 "-" "PostmanRuntime/7.43.0"
+2024-12-19 15:58:53 warn: User 8 không có quyền tạo nhiệm vụ nhóm cho group 2
+2024-12-19 15:58:53 info: ::1 - - [19/Dec/2024:08:58:53 +0000] "POST /api/group-tasks HTTP/1.1" 403 63 "-" "PostmanRuntime/7.43.0"
+2024-12-19 16:03:21 info: User registered: Thuy.LT226126@sis.hust.edu.vn
+2024-12-19 16:03:21 info: ::1 - - [19/Dec/2024:09:03:21 +0000] "POST /api/auth/register HTTP/1.1" 201 275 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 16:04:17 warn: Login failed: Mật khẩu không chính xác cho email Thuy.LT226126@sis.hust.edu.vn.
+2024-12-19 16:04:17 info: ::1 - - [19/Dec/2024:09:04:17 +0000] "POST /api/auth/login HTTP/1.1" 400 58 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 21:25:06 info: Server is running on port 5000
+2024-12-19 21:25:06 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-19 21:25:17 info: ::1 - - [19/Dec/2024:14:25:17 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 21:25:17 info: ::1 - - [19/Dec/2024:14:25:17 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 21:25:17 info: ::1 - - [19/Dec/2024:14:25:17 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 21:25:17 info: ::1 - - [19/Dec/2024:14:25:17 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 21:25:18 info: ::1 - - [19/Dec/2024:14:25:18 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2024-12-19 22:35:38 info: Server is running on port 5000
+2024-12-19 22:35:38 info: Swagger docs available at http://localhost:5000/api-docs
+2024-12-19 22:39:07 info: ::1 - - [19/Dec/2024:15:39:07 +0000] "POST /api/register HTTP/1.1" 404 152 "-" "PostmanRuntime/7.43.0"
+2024-12-19 22:39:31 info: ::1 - - [19/Dec/2024:15:39:31 +0000] "POST /api/register HTTP/1.1" 404 152 "-" "PostmanRuntime/7.43.0"
+2024-12-19 22:46:04 info: ::1 - - [19/Dec/2024:15:46:04 +0000] "POST /api/auth/register HTTP/1.1" 400 122 "-" "PostmanRuntime/7.43.0"
+2024-12-19 22:46:28 info: User registered: laithuy07@gmail.com
+2024-12-19 22:46:28 info: ::1 - - [19/Dec/2024:15:46:28 +0000] "POST /api/auth/register HTTP/1.1" 201 270 "-" "PostmanRuntime/7.43.0"
+2024-12-19 22:51:43 info: User logged in: laithuy07@gmail.com
+2024-12-19 22:51:43 info: ::1 - - [19/Dec/2024:15:51:43 +0000] "POST /api/auth/login HTTP/1.1" 200 270 "-" "PostmanRuntime/7.43.0"
