@@ -1,4 +1,5 @@
-const { createTask, getTasksByUser, updateTask, deleteTask } = require('../models/taskModel');
+const { createTask, getTasksByUser, updateTask, deleteTask, isValidCategory } = require('../models/taskModel');
+
 const logger = require('../utils/logger');
 
 // Thêm nhiệm vụ mới
@@ -7,6 +8,14 @@ const addTaskController = async (req, res) => {
     const userId = req.user.user_id;
 
     try {
+        // Kiểm tra danh mục hợp lệ nếu có categoryId
+        if (categoryId) {
+            const categoryValid = await isValidCategory(categoryId, userId);
+            if (!categoryValid) {
+                throw new Error('Category ID không hợp lệ hoặc không thuộc về người dùng');
+            }
+        }
+
         const newTask = await createTask(userId, title, description, dueDate, status, categoryId);
         logger.info(`Task created for user ${userId}: ${newTask.task_id}`);
         res.status(201).json(newTask);
@@ -19,7 +28,7 @@ const addTaskController = async (req, res) => {
 // Lấy danh sách nhiệm vụ của người dùng
 const getUserTasksController = async (req, res) => {
     const userId = req.user.user_id;
-    const { status } = req.query; // Lọc theo status nếu có
+    const { status } = req.query; // Lọc theo trạng thái nếu có
 
     try {
         const tasks = await getTasksByUser(userId, status !== undefined ? JSON.parse(status) : null);
@@ -30,22 +39,58 @@ const getUserTasksController = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
-
-// Cập nhật nhiệm vụ
 const updateTaskController = async (req, res) => {
     const { taskId } = req.params;
     const userId = req.user.user_id;
-    const fields = req.body;
+    let fields = req.body;
 
     try {
-        const updatedTask = await updateTask(taskId, userId, fields);
-        logger.info(`Task updated for user ${userId}: ${taskId}`);
+        // Kiểm tra taskId hợp lệ
+        const parsedTaskId = parseInt(taskId, 10);
+        if (isNaN(parsedTaskId)) {
+            throw new Error('Invalid taskId');
+        }
+
+        // Chuẩn hóa giá trị `status` (nếu tồn tại)
+        if (fields.status !== undefined) {
+            fields.status = fields.status === true || fields.status === 'true';
+        }
+
+        // Chuyển đổi camelCase thành snake_case
+        const convertedFields = {};
+        for (const [key, value] of Object.entries(fields)) {
+            const snakeCaseKey = key.replace(/([A-Z])/g, letter => `_${letter.toLowerCase()}`);
+            convertedFields[snakeCaseKey] = value;
+        }
+
+        // Lọc các giá trị không hợp lệ
+        const validFields = Object.fromEntries(
+            Object.entries(convertedFields).filter(([key, value]) => value !== undefined && value !== null)
+        );
+
+        // Nếu không có trường hợp lệ để cập nhật, trả về lỗi
+        if (Object.keys(validFields).length === 0) {
+            throw new Error('Không có trường hợp hợp lệ để cập nhật');
+        }
+
+        // Kiểm tra danh mục hợp lệ nếu có `category_id`
+        if (validFields.category_id) {
+            const categoryValid = await isValidCategory(validFields.category_id, userId);
+            if (!categoryValid) {
+                throw new Error('Category ID không hợp lệ hoặc không thuộc về người dùng');
+            }
+        }
+
+        // Gọi hàm updateTask để xử lý cập nhật
+        const updatedTask = await updateTask(parsedTaskId, userId, validFields);
+        logger.info(`Task updated for user ${userId}: ${parsedTaskId}`);
         res.status(200).json(updatedTask);
     } catch (error) {
         logger.error(`Error updating task for user ${userId}: ${error.message}`);
         res.status(400).json({ message: error.message });
     }
 };
+
 
 // Xóa nhiệm vụ (xóa mềm)
 const deleteTaskController = async (req, res) => {

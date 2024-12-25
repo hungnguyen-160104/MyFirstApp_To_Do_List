@@ -4,14 +4,17 @@ const pool = require('../config/db');
 const createTask = async (userId, title, description, dueDate, status = false, categoryId) => {
     try {
         // Kiểm tra tính hợp lệ của category_id
-        const categoryValid = await isValidCategory(categoryId);
-        if (!categoryValid) {
-            throw new Error('Category ID không hợp lệ');
+        if (categoryId) {
+            const categoryValid = await isValidCategory(categoryId, userId);
+            if (!categoryValid) {
+                throw new Error('Category ID không hợp lệ hoặc không thuộc về người dùng');
+            }
         }
 
         const result = await pool.query(
             `INSERT INTO tasks (user_id, title, description, due_date, status, category_id) 
-             VALUES ($1, $2, $3, $4, $5, $6) RETURNING task_id, title, description, due_date, status, category_id, created_at`,
+             VALUES ($1, $2, $3, $4, $5, $6) 
+             RETURNING task_id, title, description, due_date, status, category_id, created_at`,
             [userId, title, description, dueDate, status, categoryId]
         );
         return result.rows[0];
@@ -23,8 +26,10 @@ const createTask = async (userId, title, description, dueDate, status = false, c
 // Lấy danh sách nhiệm vụ của người dùng (kèm lọc theo status)
 const getTasksByUser = async (userId, status = null) => {
     try {
-        let query = `SELECT task_id, title, description, due_date, status, category_id, created_at 
-                     FROM tasks WHERE user_id = $1 AND is_deleted = false`;
+        let query = `
+            SELECT task_id, title, description, due_date, status, category_id, created_at 
+            FROM tasks 
+            WHERE user_id = $1 AND is_deleted = false`;
         const values = [userId];
 
         // Nếu cần lọc theo status
@@ -40,7 +45,6 @@ const getTasksByUser = async (userId, status = null) => {
     }
 };
 
-// Cập nhật thông tin nhiệm vụ
 const updateTask = async (taskId, userId, fields) => {
     try {
         // Kiểm tra xem nhiệm vụ có thuộc về người dùng không
@@ -49,30 +53,54 @@ const updateTask = async (taskId, userId, fields) => {
             throw new Error('Người dùng không có quyền chỉnh sửa nhiệm vụ này');
         }
 
-        // Kiểm tra tính hợp lệ của category_id nếu được cập nhật
+        // Chuẩn hóa giá trị `status` nếu tồn tại
+        if (fields.status !== undefined) {
+            fields.status = fields.status === true || fields.status === 'true';
+        }
+
+        // Kiểm tra tính hợp lệ của `category_id` nếu được cập nhật
         if (fields.category_id) {
-            const categoryValid = await isValidCategory(fields.category_id);
+            const categoryValid = await isValidCategory(fields.category_id, userId);
             if (!categoryValid) {
-                throw new Error('Category ID không hợp lệ');
+                throw new Error('Category ID không hợp lệ hoặc không thuộc về người dùng');
             }
         }
 
+        // Xây dựng câu lệnh SQL động với cast cho các trường có thể cần
         const allowedFields = ['title', 'description', 'due_date', 'status', 'category_id'];
         const updates = Object.keys(fields)
             .filter((key) => allowedFields.includes(key))
-            .map((key, index) => `${key} = $${index + 1}`)
+            .map((key, index) => {
+                if (key === 'status') {
+                    return `${key} = $${index + 1}::BOOLEAN`;
+                }
+                if (key === 'category_id') {
+                    return `${key} = $${index + 1}::INTEGER`;
+                }
+                if (key === 'due_date') {
+                    return `${key} = $${index + 1}::TIMESTAMP`;
+                }
+                return `${key} = $${index + 1}`;
+            })
             .join(', ');
 
         if (!updates) {
-            throw new Error('No valid fields to update');
+            throw new Error('Không có trường hợp hợp lệ để cập nhật');
         }
 
         const values = Object.values(fields);
+
+        // Thêm console.log để kiểm tra giá trị
+        console.log('Fields:', fields); // Hiển thị các field đang cập nhật
+        console.log('Values:', values); // Hiển thị giá trị truyền vào câu lệnh SQL
+        console.log('taskId:', taskId, 'userId:', userId); // Kiểm tra taskId và userId
+
         const result = await pool.query(
-            `UPDATE tasks SET ${updates}, updated_at = CURRENT_TIMESTAMP 
-             WHERE task_id = $${values.length + 1} AND is_deleted = false 
+            `UPDATE tasks 
+             SET ${updates}, updated_at = CURRENT_TIMESTAMP 
+             WHERE task_id = $${values.length + 1}::INTEGER AND user_id = $${values.length + 2}::INTEGER AND is_deleted = false 
              RETURNING task_id, title, description, due_date, status, category_id, updated_at`,
-            [...values, taskId]
+            [...values, taskId, userId]
         );
 
         return result.rows[0];
@@ -80,6 +108,7 @@ const updateTask = async (taskId, userId, fields) => {
         throw new Error(`Error updating task: ${error.message}`);
     }
 };
+
 
 // Xóa nhiệm vụ (xóa mềm)
 const deleteTask = async (taskId, userId) => {
@@ -92,7 +121,8 @@ const deleteTask = async (taskId, userId) => {
 
         const result = await pool.query(
             `UPDATE tasks SET is_deleted = true, updated_at = CURRENT_TIMESTAMP 
-             WHERE task_id = $1 RETURNING task_id, title, description, due_date, status, category_id, updated_at`,
+             WHERE task_id = $1 
+             RETURNING task_id, title, description, due_date, status, category_id, updated_at`,
             [taskId]
         );
         return result.rows[0];
@@ -102,11 +132,13 @@ const deleteTask = async (taskId, userId) => {
 };
 
 // Kiểm tra danh mục hợp lệ
-const isValidCategory = async (categoryId) => {
+const isValidCategory = async (categoryId, userId) => {
     try {
         const result = await pool.query(
-            `SELECT category_id FROM categories WHERE category_id = $1`,
-            [categoryId]
+            `SELECT category_id 
+             FROM categories 
+             WHERE category_id = $1 AND user_id = $2`,
+            [categoryId, userId]
         );
         return result.rowCount > 0;
     } catch (error) {
@@ -118,7 +150,9 @@ const isValidCategory = async (categoryId) => {
 const isTaskOwner = async (taskId, userId) => {
     try {
         const result = await pool.query(
-            `SELECT task_id FROM tasks WHERE task_id = $1 AND user_id = $2 AND is_deleted = false`,
+            `SELECT task_id 
+             FROM tasks 
+             WHERE task_id = $1 AND user_id = $2 AND is_deleted = false`,
             [taskId, userId]
         );
         return result.rowCount > 0;
@@ -132,5 +166,5 @@ module.exports = {
     getTasksByUser,
     updateTask,
     deleteTask,
-    isValidCategory
+    isValidCategory,
 };

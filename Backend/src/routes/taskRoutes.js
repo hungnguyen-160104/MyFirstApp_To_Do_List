@@ -120,7 +120,7 @@ router.get('/', authenticate, getUserTasksController);
  *                 type: string
  *               description:
  *                 type: string
- *               dueDate:
+ *               due_date:
  *                 type: string
  *                 format: date
  *               status:
@@ -139,8 +139,8 @@ router.put(
     [
         check('title', 'Title is required').optional().notEmpty(),
         check('description', 'Description is required').optional().notEmpty(),
-        check('dueDate', 'Invalid date format').optional().isISO8601(),
-        check('status', 'Status must be boolean').optional().isBoolean(),
+        check('due_date', 'Invalid date format').optional().isISO8601(),
+        check('status', 'Status must be boolean').optional(),
         check('categoryId', 'Category ID must be an integer').optional().isInt(),
     ],
     (req, res, next) => {
@@ -148,10 +148,17 @@ router.put(
         if (!errors.isEmpty()) {
             return res.status(400).json({ errors: errors.array() });
         }
+
+        // Chuẩn hóa `status` tại đây
+        if (req.body.status !== undefined) {
+            req.body.status = req.body.status === true || req.body.status === 'true';
+        }
+
         next();
     },
     updateTaskController
 );
+
 
 /**
  * @swagger
