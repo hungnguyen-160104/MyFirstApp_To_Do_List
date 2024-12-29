@@ -1,0 +1,20 @@
+[2024-12-27 00:39:19] INFO: Server is running on port 5000
+[2024-12-27 00:39:19] INFO: Swagger docs available at http://localhost:5000/api-docs
+[2024-12-27 00:39:26] INFO: ::1 - - [26/Dec/2024:17:39:26 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:39:26] INFO: ::1 - - [26/Dec/2024:17:39:26 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:39:26] INFO: ::1 - - [26/Dec/2024:17:39:26 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:39:26] INFO: ::1 - - [26/Dec/2024:17:39:26 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:39:26] INFO: ::1 - - [26/Dec/2024:17:39:26 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:40:19] INFO: User registered: 87654321@gmail.com
+[2024-12-27 00:40:19] INFO: ::1 - - [26/Dec/2024:17:40:19 +0000] "POST /api/auth/register HTTP/1.1" 201 251 "-" "PostmanRuntime/7.43.0"
+[2024-12-27 00:40:53] INFO: User logged in: 87654321@gmail.com
+[2024-12-27 00:40:53] INFO: ::1 - - [26/Dec/2024:17:40:53 +0000] "POST /api/auth/login HTTP/1.1" 200 251 "-" "PostmanRuntime/7.43.0"
+[2024-12-27 00:41:19] INFO: ::1 - - [26/Dec/2024:17:41:19 +0000] "GET /api/profile HTTP/1.1" 404 150 "-" "PostmanRuntime/7.43.0"
+[2024-12-27 00:41:35] INFO: User authenticated: user_id=11
+[2024-12-27 00:41:35] INFO: ::1 - - [26/Dec/2024:17:41:35 +0000] "GET /api/auth/profile HTTP/1.1" 200 135 "-" "PostmanRuntime/7.43.0"
+[2024-12-27 00:42:44] INFO: User logged in: 87654321@gmail.com
+[2024-12-27 00:42:44] INFO: ::1 - - [26/Dec/2024:17:42:44 +0000] "POST /api/auth/login HTTP/1.1" 200 251 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:42:58] INFO: User authenticated: user_id=11
+[2024-12-27 00:42:58] INFO: ::1 - - [26/Dec/2024:17:42:58 +0000] "GET /api/auth/profile HTTP/1.1" 200 135 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[2024-12-27 00:42:58] INFO: User authenticated: user_id=11
+[2024-12-27 00:42:58] INFO: ::1 - - [26/Dec/2024:17:42:58 +0000] "GET /api/auth/profile HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
