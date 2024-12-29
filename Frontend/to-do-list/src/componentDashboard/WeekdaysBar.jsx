@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { format, addDays, startOfWeek } from "date-fns";
-import styles from "./WeekdaysBar.module.css";
+import { format, addDays, startOfWeek, isSameDay } from "date-fns";
+import { useNavigate } from "react-router-dom";
+import styles from "./WeekdaysBar.module.css"; // CSS module để tạo giao diện
 
 const WeekdaysBar = () => {
   const [currentWeekStart, setCurrentWeekStart] = useState(
-    startOfWeek(new Date(), { weekStartsOn: 0 })
+    startOfWeek(new Date(), { weekStartsOn: 1 }) // Tuần bắt đầu từ Thứ 2
   );
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const navigate = useNavigate();
+  const today = new Date(); // Ngày hôm nay
 
   // Tính toán các ngày trong tuần
   const weekDays = [...Array(7)].map((_, index) =>
@@ -23,13 +25,13 @@ const WeekdaysBar = () => {
 
   return (
     <div className={styles.weekdaysBarContainer}>
-      {/* Nút chuyển tuần */}
+      {/* Thanh điều hướng tuần */}
       <div className={styles.navigation}>
         <button
           className={styles.navigationButton}
           onClick={() => navigateWeek(-1)}
         >
-          Trước
+          &#8592; Tuần trước
         </button>
         <h6 className={styles.navigationTitle}>
           Tuần {format(currentWeekStart, "dd/MM/yyyy")} -{" "}
@@ -39,22 +41,22 @@ const WeekdaysBar = () => {
           className={styles.navigationButton}
           onClick={() => navigateWeek(1)}
         >
-          Sau
+          Tuần sau &#8594;
         </button>
       </div>
 
-      {/* Lịch ngang */}
+      {/* Các ngày trong tuần */}
       <div className={styles.weekdays}>
         {weekDays.map((day) => (
           <div
             key={day}
             className={`${styles.weekday} ${
-              formatDate(selectedDate) === formatDate(day) ? styles.weekdayActive : ""
+              isSameDay(day, today) ? styles.today : ""
             }`}
-            onClick={() => setSelectedDate(day)}
+            onClick={() => navigate(`/day/${formatDate(day)}`)}
           >
-            <p className={styles.weekdayText}>{format(day, "E")}</p>
-            <p className={styles.weekdayDate}>{format(day, "dd")}</p>
+            <p className={styles.weekdayText}>{format(day, "EEEE")}</p>
+            <p className={styles.weekdayDate}>{format(day, "dd/MM")}</p>
           </div>
         ))}
       </div>

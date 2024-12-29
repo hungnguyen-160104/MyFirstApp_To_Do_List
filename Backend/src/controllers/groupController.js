@@ -1,98 +1,131 @@
 const {
-  createGroup,
-  updateGroup,
-  deleteGroup,
-  addMemberToGroup,
-  removeMemberFromGroup
-} = require('../models/groupModel');
-const { createNotificationForGroupInvite } = require('./notificationController');
+  createGroupTask,
+  updateGroupTask,
+  deleteGroupTask,
+  getAdminTasks,
+  getMemberTasks,
+  updateTaskStatus
+} = require('../models/groupTaskModel');
+
 const logger = require('../utils/logger');
 
-// Tạo nhóm mới
-const createGroupController = async (req, res) => {
-  const { name, description } = req.body;
-  const userId = req.user.user_id; // Lấy từ token
+// Tạo nhiệm vụ nhóm
+const createGroupTaskController = async (req, res) => {
+  const { groupId, title, description, dueDate, assignedTo } = req.body;
+  const adminId = req.user.user_id;
 
   try {
-    const groupId = await createGroup(name, description, userId);
-    logger.info(`Group created successfully: groupId=${groupId}, createdBy=${userId}`);
-    res.status(201).json({ groupId, message: 'Group created successfully' });
+    const task = await createGroupTask(groupId, adminId, title, description, dueDate, assignedTo);
+    logger.info(`Task created successfully by admin ${adminId} in group ${groupId}`);
+    res.status(201).json(task);
   } catch (error) {
-    logger.error(`Error creating group: ${error.message}`);
-    res.status(500).json({ message: error.message });
+    logger.error(`Failed to create task: ${error.message}`);
+    res.status(400).json({ message: error.message });
   }
 };
 
-// Sửa thông tin nhóm
-const updateGroupController = async (req, res) => {
-  const { groupId } = req.params;
-  const { name, description } = req.body;
-  const userId = req.user.user_id; // Lấy từ token
+// Cập nhật nhiệm vụ nhóm
+
+const updateGroupTaskController = async (req, res) => {
+  const { group_task_id } = req.params; 
+  const { groupId, updates } = req.body;
+  const adminId = req.user.user_id;
 
   try {
-    const updatedGroup = await updateGroup(groupId, userId, name, description);
-    logger.info(`Group updated successfully: groupId=${groupId}, updatedBy=${userId}`);
-    res.status(200).json({ updatedGroup, message: 'Group updated successfully' });
+    const updatedTask = await updateGroupTask(group_task_id, adminId, groupId, updates);
+    logger.info(`Task ${group_task_id} updated successfully by admin ${adminId}`);
+    res.status(200).json(updatedTask);
   } catch (error) {
-    logger.error(`Error updating group groupId=${groupId}: ${error.message}`);
-    res.status(500).json({ message: error.message });
+    logger.error(`Failed to update task ${group_task_id}: ${error.message}`);
+    res.status(400).json({ message: error.message });
   }
 };
 
-// Xóa nhóm (xóa mềm)
-const deleteGroupController = async (req, res) => {
-  const { groupId } = req.params;
-  const userId = req.user.user_id; // Lấy từ token
+
+// Xóa nhiệm vụ nhóm
+const deleteGroupTaskController = async (req, res) => {
+  const { group_task_id } = req.params; // Sử dụng group_task_id thay vì taskId
+  const { groupId } = req.body;
+  const adminId = req.user.user_id;
 
   try {
-    const deletedGroup = await deleteGroup(groupId, userId);
-    logger.info(`Group deleted successfully: groupId=${groupId}, deletedBy=${userId}`);
-    res.status(200).json({ deletedGroup, message: 'Group deleted successfully' });
+    const deletedTask = await deleteGroupTask(group_task_id, adminId, groupId);
+    logger.info(`Task ${group_task_id} deleted successfully by admin ${adminId}`);
+    res.status(200).json(deletedTask);
   } catch (error) {
-    logger.error(`Error deleting group groupId=${groupId}: ${error.message}`);
-    res.status(500).json({ message: error.message });
+    logger.error(`Failed to delete task ${group_task_id}: ${error.message}`);
+    res.status(400).json({ message: error.message });
   }
 };
 
-// Thêm thành viên vào nhóm
-const addMemberToGroupController = async (req, res) => {
-  const { groupId } = req.params;
-  const { memberId } = req.body;
-  const adminId = req.user.user_id; // Lấy từ token
+
+// Lấy danh sách nhiệm vụ của admin
+const getAdminTasksController = async (req, res) => {
+  const groupId = req.params.groupId;
+  const memberId = req.query.memberId || null; // Tham số để lọc theo member
+  const adminId = req.user.user_id;
 
   try {
-    const addedMember = await addMemberToGroup(groupId, adminId, memberId);
-    // Tạo thông báo cho thành viên được mời
-    await createNotificationForGroupInvite(memberId, `Bạn đã được mời vào nhóm ${groupId} bởi Admin ${adminId}`);
-
-    logger.info(`Member added successfully: memberId=${memberId}, groupId=${groupId}, addedBy=${adminId}`);
-    res.status(200).json({ addedMember, message: 'Member added successfully' });
+      const tasks = await getAdminTasks(groupId, adminId, memberId);
+      res.status(200).json(tasks);
   } catch (error) {
-    logger.error(`Error adding member memberId=${memberId} to groupId=${groupId}: ${error.message}`);
-    res.status(500).json({ message: error.message });
+      res.status(400).json({ message: error.message });
   }
 };
 
-// Xóa thành viên khỏi nhóm
-const removeMemberFromGroupController = async (req, res) => {
-  const { groupId } = req.params;
-  const { memberId } = req.body;
-  const adminId = req.user.user_id; // Lấy từ token
+
+const getMemberTasksController = async (req, res) => {
+  const groupId = req.params.groupId;
+  const memberId = req.user && req.user.user_id;
+
+  logger.info(`Controller: Received request for groupId = ${groupId}, memberId = ${memberId}`);
+
+  if (!memberId) {
+      logger.warn('Unauthorized: No user information found.');
+      return res.status(401).json({ message: 'Unauthorized: No user information found.' });
+  }
 
   try {
-    const removedMember = await removeMemberFromGroup(groupId, adminId, memberId);
-    logger.info(`Member removed successfully: memberId=${memberId}, groupId=${groupId}, removedBy=${adminId}`);
-    res.status(200).json({ removedMember, message: 'Member removed successfully' });
+      const tasks = await getMemberTasks(groupId, memberId);
+      logger.info(`Controller: Retrieved tasks = ${JSON.stringify(tasks)}`);
+
+      if (tasks.length === 0) {
+          logger.info('No tasks found for this member.');
+          return res.status(404).json({ message: 'No tasks found for this member.' });
+      }
+      res.status(200).json(tasks);
   } catch (error) {
-    logger.error(`Error removing member memberId=${memberId} from groupId=${groupId}: ${error.message}`);
-    res.status(500).json({ message: error.message });
+      logger.error(`Controller Error: ${error.message}`);
+      res.status(400).json({ message: error.message });
   }
 };
+
+
+
+
+
+// Cập nhật trạng thái nhiệm vụ nhóm
+const updateTaskStatusController = async (req, res) => {
+  const { group_task_id } = req.params; 
+  const { status } = req.body;
+  const userId = req.user.user_id;
+
+  try {
+    const updatedStatus = await updateTaskStatus(group_task_id, userId, status);
+    logger.info(`Task ${group_task_id} status updated to ${status} by user ${userId}`);
+    res.status(200).json(updatedStatus);
+  } catch (error) {
+    logger.error(`Failed to update status for task ${group_task_id}: ${error.message}`);
+    res.status(400).json({ message: error.message });
+  }
+};
+
 
 module.exports = {
-  createGroupController,
-  updateGroupController,
-  deleteGroupController,
-  addMemberToGroupController,
-  removeMemberFromGroupController
+  createGroupTaskController,
+  updateGroupTaskController,
+  deleteGroupTaskController,
+  getAdminTasksController,
+  getMemberTasksController,
+  updateTaskStatusController
 };

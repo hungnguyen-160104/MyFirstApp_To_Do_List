@@ -1,0 +1,106 @@
+/* Container chính */
+.dayDetailContainer {
+  max-width: 1000px; /* Tăng chiều rộng tối đa */
+  margin: 20px auto;
+  padding: 30px; /* Tăng khoảng cách bên trong */
+  background-color: rgba(255, 255, 255, 0.9); /* Nền mờ để chữ dễ đọc */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Tăng hiệu ứng đổ bóng */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333333;
+}
+
+
+.bodyBackground {
+  background-image: url("./bkhn-1649248088-1649248102-777-3117-2932-1670214444.jpg");
+  background-size: cover; /* Bao phủ toàn bộ màn hình */
+  background-position: center; /* Căn giữa hình nền */
+  background-repeat: no-repeat; /* Không lặp lại */
+  min-height: 100vh; /* Chiều cao tối thiểu bằng chiều cao của màn hình */
+  display: flex; /* Để căn giữa container */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Tiêu đề */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Ngày */
+.date {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/* Nội dung */
+.content {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.activityTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+.activityList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Chiếm toàn bộ chiều ngang của container */
+}
+
+
+.activityItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Tăng khoảng cách bên trong */
+  background-color: #f9f9f9;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px; /* Tăng kích thước chữ */
+  color: #555555;
+  width: 100%; /* Đảm bảo thanh chứa chiếm toàn bộ chiều ngang container */
+  box-sizing: border-box; /* Bao gồm padding trong kích thước */
+  cursor: pointer;
+}
+
+.activityItem:hover {
+  background-color: #ffcccb;
+}
+
+
+.activityTime {
+  font-weight: bold;
+  color: #e57373;
+  margin-right: 10px;
+}
+
+.activityDescription {
+  flex: 1;
+}
+
+/* Nút thoát */
+.exitButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.exitButton:hover {
+  background-color: #c43e3e;
+}

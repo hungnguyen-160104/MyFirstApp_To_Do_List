@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-
-
-
-
 // Import các component chính
 import Header from "./components/Header";
 import Features from "./components/Features";
-
 import CTA from "./components/CTA";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
@@ -27,6 +22,10 @@ import AddTask from "./Group/AddTask";
 import UserProfile from "./SideBarComponents/UserProfile";
 import ToDoListPage from "./ToDoListPage/ToDoListPage";
 
+// Import các component mới
+import WeekdaysBar from "./componentDashboard/WeekdaysBar"; // Import thanh tuần
+import DayDetailPage from "./componentDashboard/DayDetail"; // Import trang chi tiết ngày
+
 function App() {
   // State quản lý danh sách các ô
   const [boxes, setBoxes] = useState([
@@ -42,7 +41,7 @@ function App() {
 
   // Xóa ô cuối cùng (không cho nhỏ hơn 1 ô)
   const removeBox = () => {
-    if (boxes.length > 1) {
+    if (boxes.length >= 0) {
       setBoxes((prev) => prev.slice(0, -1));
     }
   };
@@ -62,16 +61,13 @@ function App() {
         <Route
           path="/"
           element={
-          <div
-            className="App"
-          >
-            <Header />
-            <CTA />
-            <Features />
-            <AboutUs />
-            <Contact />
-          </div>
-
+            <div className="App">
+              <Header />
+              <CTA />
+              <Features />
+              <AboutUs />
+              <Contact />
+            </div>
           }
         />
 
@@ -105,6 +101,12 @@ function App() {
 
         {/* Thêm Công Việc */}
         <Route path="/group/add-task" element={<AddTask />} />
+
+        {/* Thanh Tuần */}
+        <Route path="/weekdays" element={<WeekdaysBar />} />
+
+        {/* Trang Chi Tiết Ngày */}
+        <Route path="/day/:date" element={<DayDetailPage />} />
       </Routes>
     </Router>
   );

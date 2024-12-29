@@ -1,12 +1,14 @@
-/* Container chính */
+/* Container chính */ 
 .weekdaysBarContainer {
-  max-width: 500px;
+  max-width: 600px; /* Tăng chiều rộng để không bị giới hạn */
   margin: 20px auto;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 20px;
   background-color: #ffffff;
   text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
 }
 
 /* Navigation - Các nút trước và sau */
@@ -19,67 +21,127 @@
 
 .navigationButton {
   text-transform: none;
-  border: 1px solid #ffffff; /* Viền trắng */
-  background-color: #e0e0e0; /* Màu xám */
-  color: #000000; /* Chữ màu đen */
+  border: 1px solid transparent; /* Bỏ viền mặc định */
+  background-color: #e0e0e0;
+  color: #000000;
   cursor: pointer;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 10px 20px;
   transition: all 0.3s ease;
+  font-size: 14px;
 }
 
 .navigationButton:hover {
-  background-color: #e57373; /* Màu đỏ nhạt hơn khi hover */
-  border: 1px solid #ffffff; /* Viền trắng khi hover */
-  color: #000000; /* Chữ giữ nguyên màu đen */
+  background-color: #ff867c; /* Màu đỏ nhẹ hơn */
+  color: #ffffff; /* Chữ màu trắng khi hover */
 }
-
 
 /* Tiêu đề tuần */
 .navigationTitle {
-  font-size: 1.5rem; /* Phóng to chữ */
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #363030; /* Màu đỏ nhạt đậm hơn */
+  color: #363030;
+  margin: 0;
+  text-align: center;
 }
 
 /* Danh sách các ngày trong tuần */
 .weekdays {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 
 .weekday {
   text-align: center;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 70px; /* Tăng kích thước */
+  height: 70px; /* Đồng bộ kích thước */
+  line-height: 20px;
+  padding: 10px;
   border-radius: 50%;
   background-color: #f5f5f5;
   color: #000000;
   transition: all 0.3s ease;
-  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 
 .weekday:hover {
-  background-color: #ffcdd2; /* Màu đỏ nhạt khi hover */
+  background-color: #ffcccb; /* Màu đỏ nhẹ khi hover */
+  transform: scale(1.1); /* Phóng to khi hover */
 }
 
+/* Nổi bật ngày hôm nay */
+.today {
+  background-color: #e57373; /* Màu đỏ nổi bật */
+  color: #ffffff; /* Chữ màu trắng */
+  box-shadow: 0px 4px 8px rgba(229, 115, 115, 0.4); /* Tạo hiệu ứng đổ bóng */
+  transform: scale(1.1); /* Phóng to nhẹ */
+}
+
+/* Ngày được chọn */
 .weekdayActive {
-  background-color: #e57373; /* Nền đỏ nhạt */
-  color: #ffffff; /* Màu chữ trắng */
+  background-color: #e57373;
+  color: #ffffff;
   box-shadow: 0px 4px 8px rgba(229, 115, 115, 0.4);
+  transform: scale(1.2); /* Phóng to hơn nếu ngày được chọn */
 }
 
 .weekdayText {
-  font-size: 12px;
-  margin: 0;
+  font-size: 14px;
+  margin: 5px 0 0 0;
   line-height: 1.2;
+  font-weight: bold;
 }
 
 .weekdayDate {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   font-weight: bold;
+}
+
+/* Tooltip hiển thị thông tin chi tiết */
+.tooltip {
+  position: absolute;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  transform: translate(-50%, -120%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.weekday:hover .tooltip {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .weekdays {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .weekday {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .navigationButton {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .navigationTitle {
+    font-size: 1.2rem;
+  }
 }

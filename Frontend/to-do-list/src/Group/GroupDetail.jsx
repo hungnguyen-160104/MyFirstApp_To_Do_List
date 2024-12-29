@@ -56,7 +56,7 @@ const GroupDetail = () => {
             ))}
           </ul>
           <button className={styles.addMemberButton} onClick={handleAddMember}>
-            Thêm Thành Viên
+            Mời Thành Viên
           </button>
         </div>
         <button className={styles.backButton} onClick={() => navigate("/dashboard")}>

@@ -101,9 +101,9 @@ const AddTask = () => {
           className={styles.select}
         >
           <option value="">Chọn thành viên</option>
-          <option value="Thành viên 1">Thành viên 1</option>
-          <option value="Thành viên 2">Thành viên 2</option>
-          <option value="Thành viên 3">Thành viên 3</option>
+          <option value="Hùng Nguyên">Hùng Nguyên</option>
+          <option value="Tuấn Duy">Tuấn Duy</option>
+          <option value="Lại Thùy">Lại Thùy</option>
         </select>
         <input
           type="text"
